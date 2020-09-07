@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController, UITextViewDelegate {
 
+    // TODO: iPhone layout
     @IBOutlet weak var input: UITextView!
     @IBOutlet weak var displayView: UITextView!
-    @IBOutlet weak var accuracy_label: UILabel!
+    @IBOutlet weak var accuracy_display: UITextView!
+    @IBOutlet weak var info_view: UITextView!
     
     let textColor = UIColor(red: 0.67, green: 0.80, blue: 0.81, alpha: 1.00)
     let backgroundColor = UIColor(red: 0.00, green: 0.16, blue: 0.20, alpha: 1.00)
@@ -71,16 +73,18 @@ class ViewController: UIViewController, UITextViewDelegate {
         while true {
             let line = lines[current_line]
             let cmd = line.prefix(2)
+
             if cmd == "D:" {
-                current_line += 1
                 lessonLine = line.components(separatedBy: cmd).last!
                 break
-            } else {
-                current_line += 1
+            } else if cmd == "I:" {
+                let info_line = line.components(separatedBy: cmd).last!
+                setText(text: info_line, view: info_view)
             }
+            current_line += 1
         }
         
-        setText(text: lessonLine)
+        setText(text: lessonLine, view: displayView)
         
         if current_line == lines.count {
             print("Done")
@@ -95,17 +99,18 @@ class ViewController: UIViewController, UITextViewDelegate {
         return try! String(contentsOfFile: path!, encoding: String.Encoding.utf8)
     }
     
-    func setText(text: String) {
+    func setText(text: String, view: UITextView) {
         let font = UIFont.systemFont(ofSize: font_size)
         let attributes:  [NSAttributedString.Key: Any] =  [NSAttributedString.Key.font: font, NSAttributedString.Key.kern: 5, NSAttributedString.Key.foregroundColor: textColor]
         let attributedString = NSAttributedString(string: text, attributes: attributes)
         
-        displayView.attributedText = attributedString
+        view.attributedText = attributedString
     }
     
     func setCursor(error: Bool) {
         let displayText = NSMutableAttributedString(attributedString: displayView.attributedText)
-
+        clearAccuracy()
+        
         // Clear previous
         if cursor > 0 {
             displayText.removeAttribute(.backgroundColor, range: NSRange(location: cursor - 1, length: 1))
@@ -116,21 +121,30 @@ class ViewController: UIViewController, UITextViewDelegate {
         // Special case to show new line
         if cursor == displayText.length {
             displayText.append(NSAttributedString(string: cr, attributes: [.font: UIFont.systemFont(ofSize: cr_font_size)]))
+            showAccuracy()
         }
         
         // Set current
         let attributes: [NSAttributedString.Key: Any] = error ?  [.backgroundColor: errorColor, .foregroundColor: backgroundColor] : [.backgroundColor: textColor, .foregroundColor: backgroundColor]
         displayText.addAttributes(attributes, range: NSRange(location: cursor, length: 1))
         displayView.attributedText = displayText
-        
-        updateAccuracy()
     }
     
     //TODO: Style this and move else where
-    func updateAccuracy() {
-        if succ_count == 0 { return }
-        let rate : Float = (Float(succ_count) / Float(succ_count + error_count)) * 100
-        accuracy_label.text = String(rate)
+    func showAccuracy() {
+        let succ_rate : Float = (Float(succ_count) / Float(succ_count + error_count)) * 100
+        var accuracy_text = String(format: "Accuracy %.2f%%", succ_rate)
+        if succ_rate < 97.0 {
+            accuracy_text.append(contentsOf: "\nNeed at least 97%")
+            current_line -= 1 //This will probably break
+        }
+        setText(text: String(accuracy_text), view: accuracy_display)
+        succ_count = 0
+        error_count = 0
+    }
+    
+    func clearAccuracy() {
+        setText(text: "", view: accuracy_display)
     }
 }
 
