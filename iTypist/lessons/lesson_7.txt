@@ -1,0 +1,93 @@
+#------------------------------------------------------------------------------
+# Lesson T7
+#------------------------------------------------------------------------------
+*:T7
+*:_T_S_T7
+B:                            Lesson T7
+
+I:First a review of the letters we've learned before:
+*:_T_R_L91
+D:juj ded kik frf lol fgf ;p; jhj
+
+*:_T_R_L92
+D:ftf jnj ftf jnj fbf juj ;?; l.l k,k
+
+I:Use your D-finger for the C-key.
+*:_T_R_L93
+D:ddd dcd ddd ccc ddd dcd
+
+*:_T_R_L94
+D:ddd cat ddd cup ddd can
+ :dcd duck dcd card dcd pack dcd
+ :dcd crate dcd scrap dcd trick dcd
+
+I:Use your J-finger for the M-key
+*:_T_R_L95
+D:jjj jmj jjj mmm jjj jmj jjj
+
+*:_T_R_L96
+D:jjj met jjj rim jjj map jjj
+ :jmj man jmj men jmj ham jjj
+ :jmj Mr. jmj Mrs. jmj Ms. jmj
+ :jmj number jmj stream jmj mankind jmj
+
+I:Use your ;-finger for the hyphen.
+*:_T_R_L97
+D:;;; ;-; ;;; --- ;;; ;-; ;;; ;-;
+
+*:_T_R_L98
+D:;;; one-third ;;; one-half ;;; three-fifths ;;;
+ :;;; part-time ;;; self-made ;;; all-American ;;;
+
+I:Let's try some sentences:
+*:_T_R_L99
+D:Peter Piper picked a peck of pickled peppers.
+
+*:_T_R_L100
+D:Motion pictures often depict macabre scenes.
+
+*:_T_R_L101
+D:Once upon a time, marriages lasted longer than mortgages.
+I:There are three uses of the hyphen.  It can be used to combine two words:
+*:_T_R_L102
+D:She had on a bluish-green dress.  But, no one noticed.
+
+I:To divide a word:
+*:_T_R_L103
+D:At macrame class last night, I made a hanging basket for the philo-
+ :dendron in our dining room.
+
+I:Or, to form a dash:
+*:_T_R_L104
+D:Fifteen dollars a month--measured in current dollars--is a good rate.
+
+I:Let's try a speed drill on these sentences:
+*:_T_R_L105
+S:The clock ran out, signaling the end of
+ :the second-half.  The game had been lost.
+
+*:_T_R_L106
+S:The paper just made an announce-
+ :ment about a commotion at the
+ :college.  Someone has just
+ :produced a micro-organism in the
+ :DNA-research lab.  It is a
+ :special kind of bacteria that
+ :consumes crude oil.  The talk is
+ :that it is being patented for use
+ :on oil spills at sea.
+
+I:Hit the return key twice for blank lines:
+*:_T_R_L107
+S:Dear Mr. Mandrake:
+ :
+ :All of us appreciated the fine performance of those magic
+ :tricks.  Please arrange to come to another of our meet-
+ :ings, if possible.  Perhaps our Christmas meeting?
+ :
+ :Thanks,
+ :
+ :Mrs. Carmichael
+
+G:_T_E_T7
+

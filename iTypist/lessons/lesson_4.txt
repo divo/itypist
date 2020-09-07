@@ -1,0 +1,72 @@
+#------------------------------------------------------------------------------
+# Lesson T4
+#------------------------------------------------------------------------------
+*:T4
+*:_T_S_T4
+B:                            Lesson T4
+
+I:First a quick review:
+*:_T_R_L52
+D:jkl; fdsa ded fgf jhj k,k kik frf l.l
+
+I:Use your L-finger for the O-key.
+*:_T_R_L53
+D:lll lol lll ooo lll lol
+
+*:_T_R_L53A
+D:lll log lll rod lll for lll
+ :lll load lll roll lll oleo lll
+
+#
+I:Use your ;-finger for the P-key.
+*:_T_R_L54
+D:;;; ;p; ;;; ppp ;;; ;p; ;;;
+
+*:_T_R_L55
+D:;;; pad ;;; peg ;;; ape ;;;
+ :;;; poke ;;; pear ;;; peek ;;;
+ :;;; opera ;;; hope ;;; drape ;;;
+
+*:_T_R_L56
+T:            The Left-Shift key.
+ :
+ :To capitalize letters on the right-side of the keyboard:
+ :
+ :    1.)  Move your A-finger to the LEFT-shift key and hold it down.
+ :
+ :    2.)  Strike the key that you want to capitalize with your right hand.
+ :
+ :    3.)  Immediately swing your A-finger back to its home position.
+
+*:_T_R_L57
+D:aaa Pi aaa Lord aaa Jill aaa
+
+I:Try capitalizing each of the keys on the right-side:
+*:_T_R_L58
+D:Joe Kip Leif Peg Olaf Ira Heidi
+
+I:Don't forget to use your right-shift key for letters on the left side:
+*:_T_R_L59
+D:a;a P.S. a;a I.R.S. a;a
+
+I:Use your ;-finger for the ?-key.
+*:_T_R_L60
+D:;;; ;?; ;;; ??? ;;; ;?; ;;;
+
+*:_T_R_L61
+D:;;; He? ;;; She? ;;; I? ;;;
+
+I:Let's try some sentences.
+*:_T_R_L62
+D:Dad fell off a ladder.  Is he safe?
+
+I:Always double space after a question mark.
+*:_T_R_L63
+D:Is he here?  Sal said he fell hard.
+
+*:_T_R_L64
+D:Did she see his fall?  Jake heard he is OK.
+ :I hope people keep off high ladders.
+
+G:_T_E_T4
+

@@ -1,0 +1,88 @@
+#------------------------------------------------------------------------------
+# Lesson T9
+#------------------------------------------------------------------------------
+*:T9
+*:_T_S_T9
+B:                            Lesson T9
+
+I:First, a review.
+*:_T_R_L126
+D:a;a sls dkd fjf sws jyj fvf dcd jmj ;-;
+
+I:Notice that the only letters left to go are the Q, X, and Z!
+*:_T_R_L127
+D:abcdefghijklmnoprstuvwy
+
+I:Use your A-finger for the Q-key.
+*:_T_R_L128
+D:aaa aqa aaa qqq aaa aqa aaa
+
+*:_T_R_L128A
+D:aaa quit aaa quad aaa quip aaa
+ :lacquer inquiry squirt quart
+ :quail quiver inquest marquis
+
+#
+I:Use your S-finger for the X-key.
+*:_T_R_L129
+D:sss sxs sss xxx sss sxs sss
+
+*:_T_R_L129A
+D:sss ax sss ox sss vex sss wax xxx
+ :examine ex-wife excellent boxer sixteen
+ :exactly sphinx oxygen except thorax
+
+#
+I:Use your A-finger for the Z-key.
+*:_T_R_L130
+D:aaa aza aaa zzz aaa aza aaa
+
+*:_T_R_L131
+D:aaa adz aaa azo aaa coz aaa
+ :quiz jazz quartz zinc dozen
+ :oxidize squeeze azimuth zoology
+
+I:The big event!!!!!!!!!!!!!!!!!!
+*:_T_R_L132
+D:abcdefghijklmnopqrstuvwxyz
+
+*:_T_R_L132A
+D:zyxwvutsrqponmlkjihgfedcba
+
+#
+I:Let's try some sentences:
+*:_T_R_L133
+D:A dozen zebras were grazing quietly nearby.
+
+*:_T_R_L134
+D:The zeppelin zigzagged quickly from the horizon up to the zenith.
+
+*:_T_R_L135
+D:Never trust a quack doctor who cannot distinguish oxygen from nitrogen.
+
+*:_T_R_L136
+D:Imagine having a sextet of sexagenarian sextons?
+
+*:_T_R_L137
+D:Remember when queer used to mean zany?
+ :Quartz crystal watches were at one time extremely expensive.
+
+I:Let's try a sentence that contains every letter of the alphabet.
+*:_T_R_L138
+D:A quick brown fox jumped over the lazy dogs.
+
+I:Again,
+*:_T_R_L139
+D:A quick brown fox jumped over the lazy dogs.
+
+I:See how fast you can type it this time:
+*:_T_R_L140
+S:A quick brown fox jumped over the lazy dogs.
+
+I:Again,
+*:_T_R_L141
+S:A quick brown fox jumped over the lazy dogs.
+
+G:_T_E_T9
+
+

@@ -1,0 +1,103 @@
+#------------------------------------------------------------------------------
+# Lesson T8
+#------------------------------------------------------------------------------
+*:T8
+*:_T_S_T8
+B:                            Lesson T8
+
+I:As always, we will start with a quick review
+*:_T_R_L108
+D:jfj dkd lsl a;a dcd jmj ;-; fbf juj
+
+I:Let's try some long words.
+*:_T_R_L109
+D:meteorology camera bituminous chimera phosphates
+
+I:Use your S-finger for the W-key.
+*:_T_R_L110
+D:sss sws sss www sss sws sss
+
+*:_T_R_L111
+D:sss wet sss who sss was sss
+
+*:_T_R_L112
+D:sws who sws what sws when sws where sws
+ :knowledge whatever Wimbledon know-it-all
+
+*:_T_R_L113
+S:How much wood could a woodchuck chuck if a
+ :woodchuck could chuck wood?  A woodchuck
+ :would chuck all the wood that a woodchuck
+ :could chuck, if a woodchuck could chuck wood.
+
+I:Use your J-finger for the Y-key.
+*:_T_R_L114
+D:jjj jyj jjj yyy jjj jyj jjj
+
+*:_T_R_L115
+D:jjj why jjj you jjj try jjj rye jjj
+ :jjj year jjj July jjj your jjj jury jjj
+ :Were your yard sales much better last year?
+
+I:Try your speed on this sentence:
+*:_T_R_L116
+S:Why are you typing so slowly?
+
+I:Use your F-finger for the V-key.
+*:_T_R_L117
+D:fff fvf fff vvv fff fvf fff
+
+*:_T_R_L118
+D:fff vat fff eve fff vow fff
+
+*:_T_R_L119
+D:fvf vine fvf dove fvf ever fvf very fvf
+
+*:_T_R_L120
+D:driven vertical advent ventrical
+ :What a fine vineyard you have.
+ :Do you intend to play adventure every night?
+
+*:_T_R_L121
+T:            THE BACKSPACE
+ :
+ :Most of the programs that you use will allow you to correct your mistakes by
+ :using the BACKSPACE and/or DELETE keys.  These keys will generally delete the
+ :previous character that you typed.  (This feature is one of the principal
+ :advantages of a word-processing system over a conventional typewriter.)
+ :
+ :I refuse to accept either of these keys during a drill pattern.  (You should
+ :keep practicing until you get it right!)  But, I will accept either a BACK-
+ :SPACE or a DELETE during a speed drill.  (I will remove the white error
+ :markers but I still count it as an error in my totals.)
+ :
+ :If you do chose to use the DELETE or BACKSPACE keys, hit the key with your
+ :;-finger and immediately return your fingers to the home position.
+
+I:Let's try our speed on some nursery rhymes!
+*:_T_R_L122
+S:Mary had a little lamb
+ :Its fleece was white as snow
+ :And every where that Mary went
+ :The lamb was sure to go.
+
+*:_T_R_L123
+S:Jack and Jill went up a hill to fetch a pail of water.
+ :Jack fell down and broke his crown and Jill came tumbling after.
+
+*:_T_R_L124
+S:Little Miss Muffet sat on a tuffet
+ :Eating her curds and whey.
+ :Along came a spider
+ :Who sat down beside her
+ :And frightened Miss Muffet away.
+
+*:_T_R_L125
+S:Hey, diddle diddle--
+ :The cat and the fiddle
+ :The cow jumped over the moon.
+ :The little dog laughed to see such sport,
+ :And the dish ran away with the spoon.
+
+G:_T_E_T8
+

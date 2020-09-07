@@ -1,0 +1,98 @@
+
+#------------------------------------------------------------------------------
+# Lesson T3
+#------------------------------------------------------------------------------
+*:T3
+*:_T_S_T3
+B:                            Lesson T3
+
+I:Let's review first.
+*:_T_R_L33
+D:fff jjj ddd kkk sss lll aaa ;;;
+
+*:_T_R_L34
+D:fgf jhj ded k,k fgf jhj ded k,k
+
+I:Use your K-finger for the I key.
+*:_T_R_L35
+D:kkk kik kkk kik kkk iii kkk
+
+*:_T_R_L36
+D:kkk iii kkk iii kk ii kk ii
+ :kkk lid kkk hill kkk did kkk
+ :kkk kill kkk kid kkk like kkk
+ :kkk kiss kkk hide kkk fill kkk
+
+I:Use your F-finger for the R key.
+*:_T_R_L37
+D:fff frf fff frf fff frf
+
+*:_T_R_L38
+D:fff rrr fff rrr ff rr ff rr
+ :fff rake fff rag fff her fff
+ :fff red fff read fff rage fff
+ :fff far fff red fff jar fff
+
+*:_T_R_L39
+D:fff fare fff rare fff rake fff
+
+*:_T_R_L40
+D:fff rid fff ire fff fair fff
+
+I:Use your L-finger for the period.
+*:_T_R_L41
+D:lll l.l lll l.l lll l.l lll
+
+*:_T_R_L42
+D:lll ... lll ... ll .. ll .. l .
+ :lll adj. lll id. lll
+ :lll eg. lll i.e. lll
+
+*:_T_R_L43
+T:The next key we are going to practice is the right shift key.
+ :
+ :Whenever you want to capitalize a key on the left side, you must use the
+ :right shift-key.  To do so, follow these steps:
+ :
+ :    a.)  Without moving your first finger from the J-key, swing the
+ :         fourth finger of your right hand over to the SHIFT-key and
+ :         hold it down.
+ :
+ :    b.)  Strike the key that you want to type with your left hand.
+ :
+ :    c.)  Immediately bring your fourth finger back to the ;-key.
+
+I:Don't look at your fingers!
+*:_T_R_L44
+D:;;; ;A; ;;; ;F; ;;; ;D; ;;; ;S;
+
+*:_T_R_L45
+D:;;; Dear ;;; Sir ;;;
+
+*:_T_R_L46
+D:;;; Fred ;;; Gail ;;; Alf ;;; Dale ;;;
+
+*:_T_R_L47
+D:;;; Ada ;;; Al ;;; Greg ;;;
+ :jjj Dr. jjj Sr. jjj Fr. jjj
+
+I:Let's try some (strange) sentences.
+*:_T_R_L48
+D:Sir, idle disks seek flags.
+
+*:_T_R_L49
+D:She sells seashells.
+ :Sailfish sail idle seas.
+ :She seeks a fig leaf.
+ :Red hair is like a fire.
+
+I:Always double space after a period.
+*:_T_R_L50
+D:A free red jade is fake.  Girls like silk.
+
+*:_T_R_L51
+D:She seeks a safe reef, if she sails.  A gale is rare.
+ :Alf fed her egg salad.  Gail likes hash.
+
+G:_T_E_T3
+

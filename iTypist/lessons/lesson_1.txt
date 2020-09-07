@@ -1,0 +1,146 @@
+#------------------------------------------------------------------------------
+# Lesson T1
+#------------------------------------------------------------------------------
+*:T1
+*:_T_S_T1
+B:                            Lesson T1
+
+*:_T_R_L0
+T:            Welcome to lesson T1.
+ :
+ :In the T series of lessons, we will be learning to touch-type on the standard
+ :keyboard.  I will introduce you to each letter on the keyboard, one at a time.
+ :By the time you have completed this series, you will be able to type the entire
+ :alphabet, the numbers, and most of the punctuation keys by touch.
+ :
+ :If you have never taken any lessons in typing before, please be patient.  Typing
+ :is not difficult but it does take a lot of practice.  Avoid the tendency to
+ :look down at your fingers while typing.  This is a very bad habit and is hard
+ :to break later.  If you hit the wrong key, I will let you know.  (But, I won't
+ :tell anyone else, so don't worry about it.)
+ :
+ :If you have always used the hunt-and-peck method, you will have an even harder
+ :time keeping yourself from looking.  Don't be surprised if you find touch
+ :typing slower than your old ways.  It may be slower when you first start.
+ :But, touch typing is far faster once you get the hang of it.
+ :
+ :If you can already touch type, you should be able to go through these lessons
+ :fairly quickly.  Or, you may want to go directly to the S series.
+
+*:_T_R_L1
+T:
+ :            The HOME Keys.
+ :
+ :In order to hit the correct keys by touch alone, you must always know where your
+ :fingers are.  The way to do this is to have a special place for each finger.
+ :This key is called the HOME position.
+ :
+ :Place the first finger of your right hand on the J-key.  Now, place your second
+ :finger on the K-key, your third finger on the L-key, and your fourth-finger on
+ :the ;-key (the one with the : and ; on it).
+ :
+ :Similarly place the four fingers of your left hand on the F, D, S, and A-keys.
+ :Place your right thumb over the SPACE bar.  (Henceforth, always hit the SPACE
+ :bar with this thumb.)  Now, lift all your fingers slightly so that they are
+ :poised just over the keys.  Each finger should be just barely touching its home
+ :key.  This is an electronic keyboard and does not take much pressure to ac-
+ :cidentally press the key down.
+ :
+ :Learn these positions well.  Whenever you are about to type a line, look at your
+ :fingers and make sure they are in the HOME position.  Then don't look at them
+ :again.
+
+*:_T_R_L2
+T:
+ :            DRILL PATTERNS
+ :
+ :For the rest of this lesson, I will display a line of text in the middle of the
+ :screen and instructions at the top of the screen.
+ :
+ :All you have to do is type in the characters that you see in the middle of
+ :the screen.  If you hit the correct key, I will not do anything.  If you make
+ :a mistake, I will display a large X under the letter that you got wrong and
+ :beep the terminal. In either event, just keep going by typing the next letter.
+ :
+ :When you have finished typing the line, hit the RETURN key.  To do this, extend
+ :the little finger of your right hand over to the RETURN key.  Hit the key and
+ :zip the finger back to its home position.  Be careful not to let your other
+ :fingers move far from their home positions in the process.  Also, be careful
+ :not to type an extra space at the end of the line.
+ :
+ :If you made no mistakes on the line, I will display the next drill pattern.  If
+ :you did make a mistake, I will beep at you and make you do the line again.  If
+ :on the second try you made more than two mistakes, I will beep again and make
+ :you try again, etc.  Don't forget to use your right thumb for the SPACE bar.
+
+I:Hit the F-key four times with the first finger of your left hand.
+*:_T_R_L3
+D:ffff
+
+I:Alternately, hit the F-key and the SPACE bar.
+*:_T_R_L4
+D:fff fff fff ff ff ff f f f
+
+I:Don't look at your hands!
+ :Hit the J-key with the first finger of your right hand.
+*:_T_R_L5
+D:jjj jjj jjj jj jj jj j j j
+
+I:Use the left hand for the F and the right hand for the J.
+*:_T_R_L6
+D:fff jjj fff jj ff jj f j f j
+
+I:Now intermix them.
+*:_T_R_L7
+D:ffjj jjff fjf fjf jfj jfj
+
+I:Use the second finger of the left hand for the D-key.
+*:_T_R_L8
+D:ddd ddd ddd dd dd dd d d d
+
+I:Use the second finger of the right hand for the K-key.
+*:_T_R_L9
+D:kkk kkk kkk kk kk kk k k k
+
+I:Now both.
+*:_T_R_L10
+D:ddd kkk dd kk dkd kdk ddd kkk
+
+I:Use the third fingers of the each hand for the S and L-keys.
+*:_T_R_L11
+D:sss lll sss lll sss ss ll ss ll s l
+
+I:Use the fourth fingers for the A and ;-keys.
+*:_T_R_L12
+D:aaa ;;; aaa ;;; aa ;; aa ;; a ;
+
+I:That's enough keys for today.  Let's review them.
+*:_T_R_L13
+D:fff jjj ddd kkk sss lll aaa ;;;
+
+I:Again.
+*:_T_R_L14
+D:fff jjj ddd kkk sss lll aaa ;;;
+
+I:Try mixing them together.
+*:_T_R_L15
+D:asdf jkl; asdf jkl; asdf jkl;
+
+I:And still more.
+*:_T_R_L16
+D:fjf kdk sls ;a;
+
+I:Before, we finish, let's try some words.
+*:_T_R_L17
+D:sad add all; alas flask fad
+
+I:How about a sentence.
+*:_T_R_L18
+D:ask a sad lad
+
+I:Sentences are kind of limited with only one vowel!
+*:_T_R_L19
+D:dad asks a lad; a lass falls
+
+G:_T_E_T1
+

@@ -78,6 +78,7 @@ class ViewController: UIViewController, UITextViewDelegate {
                 lessonLine = line.components(separatedBy: cmd).last!
                 break
             } else if cmd == "I:" {
+                // TODO: I need to clear this if a D: hasen't been found
                 let info_line = line.components(separatedBy: cmd).last!
                 setText(text: info_line, view: info_view)
             }
@@ -95,7 +96,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
     
     func loadLessonFile() -> String? {
-        let path = Bundle.main.path(forResource: "lesson_data", ofType: "txt") // file path for file "data.txt"
+        let path = Bundle.main.path(forResource: "lesson_1", ofType: "txt") // file path for file "data.txt"
         return try! String(contentsOfFile: path!, encoding: String.Encoding.utf8)
     }
     

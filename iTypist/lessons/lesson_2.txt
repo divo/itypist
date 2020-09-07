@@ -1,0 +1,73 @@
+#------------------------------------------------------------------------------
+# Lesson T2
+#------------------------------------------------------------------------------
+*:T2
+*:_T_S_T2
+B:                            Lesson T2
+
+*:_T_R_L20
+T:
+ :In this lesson, we will review the letters that you have already practiced
+ :and will add the letters E, G, and H and the period.
+ :
+ :When you reach for any of these keys, be sure to return your finger to its
+ :home position.  For example, to hit the H-key, move the first finger of your
+ :right hand (the J-finger) slightly to the left.  Tap the H-key and immediately
+ :bring your finger back over the J.
+ :
+ :If you lose track of where your fingers are guess.  Don't look!
+
+I:First let's review
+*:_T_R_L21
+D:fff jjj ddd kkk sss lll aaa ;;;
+
+*:_T_R_L22
+D:asdf jkl; fdsa ;lkj
+ :fjf jfj dkd kdk sls lsl a;a ;a;
+ :jkj jlj j;j fdf fsf faf
+ :a sad lass; ask dad;
+
+I:Use your J-finger for the H key.
+*:_T_R_L23
+D:jjj jhj jjj jhj jjj jhj
+
+*:_T_R_L24
+D:jjj hhh jjj hhh jj hh j h j h
+ :jjj had jjj ash jjj has jjj
+ :jjj sash jjj hash jjj hall jjj
+
+I:Use your F-finger for the G-key.
+*:_T_R_L25
+D:fff fgf fff fgf fff fgf
+
+*:_T_R_L26
+D:fff ggg fff ggg fff ggg
+ :fff gag fff lag fff flag fff
+ :fff sag fff slag fff hag fff
+
+I:Use your D-finger for the E-key
+*:_T_R_L27
+D:ddd ded ddd ded ddd ded ddd
+
+*:_T_R_L28
+D:ddd eee ddd eee dd ee dd ee d e
+ :ddd fee ddd see ddd elf ddd
+ :lake asked fake gale egg
+
+I:Use your K-finger for the comma.
+*:_T_R_L29
+D:kkk k,k kkk k,k kkk k,k
+
+*:_T_R_L30
+D:kkk ,,, kkk ,,, kkk ,,, kkk
+
+I:Let's finish with some sentences.
+*:_T_R_L31
+D:a lad had a flask, dad had a keg
+
+*:_T_R_L32
+D:she had a fake egg, he had a salad
+
+G:_T_E_T2
+
+

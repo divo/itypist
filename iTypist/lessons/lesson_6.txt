@@ -1,0 +1,62 @@
+#------------------------------------------------------------------------------
+# Lesson T6
+#------------------------------------------------------------------------------
+*:T6
+*:_T_S_T6
+B:                            Lesson T6
+
+I:Let's review the letters we've already learned.
+*:_T_R_L81
+D:jkj fdf jlj fsf j;j faf kik ded frf
+
+*:_T_R_L82
+D:fgf jhj k,k l.l A;A F;F E;E
+ :lol ;p; JaJ :a: ftf jnj ;:;
+ :jug ton knot poison the neither often
+
+I:Use your F-finger for the B-key.
+*:_T_R_L83
+D:fff fbf fff bbb fff fbf fff
+
+I:The B-key is the longest reach we've seen so far.  Let's try it again.
+*:_T_R_L84
+D:fff fbf fff bbb fff fbf fff
+
+*:_T_R_L84A
+D:frf bar frf rib frf pub frf
+ :frf bring frf abort frf brother frf
+
+#
+I:Use your J-finger for the U-key.
+*:_T_R_L85
+D:jjj juj jjj uuu jjj juj jjj
+
+*:_T_R_L86
+D:juj jug juj use juj hug juj
+ :juj tulip juj turn juj under juj
+ :Please pass the butter and salt, but not the pepper.
+
+I:Use your ;-finger for the /-key.
+*:_T_R_L87
+D:;;; ;/; ;;; /// ;;; ;/; ;;;
+
+*:_T_R_L88
+D:;/; n/a ;/; and/or ;/; left/right
+ :In this era of E.R.A., I hope he/she likes his/her job.
+ :He/she should bring his/her spouse at about noon or just before.
+ :Should I be here alone?  Is Bernie and/or Julie going to be here, too?
+
+I:Try your speed on some paragraphs:
+*:_T_R_L89
+S:All bills are to be paid in full.  If
+ :there is no fee to be paid, return the
+ :bill and put n/a in the total due part.
+
+I:You should be aiming for 15 WPM.  (If you did better, work on accuracy.)
+*:_T_R_L90
+S:In baseball, bunting is a kind of hit.  But, bunting also
+ :refers to a kind of bird and the stuff that is used in
+ :flags.  English sure is a strange language.
+
+G:_T_E_T6
+

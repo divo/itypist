@@ -15,7 +15,22 @@
 		83232B452505A73B00664B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83232B432505A73B00664B77 /* LaunchScreen.storyboard */; };
 		83232B502505A73B00664B77 /* iTypistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83232B4F2505A73B00664B77 /* iTypistTests.swift */; };
 		83232B5B2505A73B00664B77 /* iTypistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83232B5A2505A73B00664B77 /* iTypistUITests.swift */; };
-		8391F32F2505D4C1001C2FAF /* lesson_data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8391F32E2505D4C1001C2FAF /* lesson_data.txt */; };
+		8391F32F2505D4C1001C2FAF /* lesson_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8391F32E2505D4C1001C2FAF /* lesson_1.txt */; };
+		8391F3322506A76C001C2FAF /* lesson_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8391F3312506A76C001C2FAF /* lesson_2.txt */; };
+		83FD1E092506A80300D3E1FD /* lesson_9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFB2506A80200D3E1FD /* lesson_9.txt */; };
+		83FD1E0A2506A80300D3E1FD /* lesson_7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFC2506A80200D3E1FD /* lesson_7.txt */; };
+		83FD1E0B2506A80300D3E1FD /* lesson_12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFD2506A80200D3E1FD /* lesson_12.txt */; };
+		83FD1E0C2506A80300D3E1FD /* lesson_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFE2506A80200D3E1FD /* lesson_6.txt */; };
+		83FD1E0D2506A80300D3E1FD /* lesson_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFF2506A80200D3E1FD /* lesson_3.txt */; };
+		83FD1E0E2506A80300D3E1FD /* lesson_14.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E002506A80300D3E1FD /* lesson_14.txt */; };
+		83FD1E0F2506A80300D3E1FD /* lesson_11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E012506A80300D3E1FD /* lesson_11.txt */; };
+		83FD1E102506A80300D3E1FD /* lesson_15.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E022506A80300D3E1FD /* lesson_15.txt */; };
+		83FD1E112506A80300D3E1FD /* lesson_13.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E032506A80300D3E1FD /* lesson_13.txt */; };
+		83FD1E122506A80300D3E1FD /* lesson_8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E042506A80300D3E1FD /* lesson_8.txt */; };
+		83FD1E132506A80300D3E1FD /* lesson_10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E052506A80300D3E1FD /* lesson_10.txt */; };
+		83FD1E142506A80300D3E1FD /* lesson_16.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E062506A80300D3E1FD /* lesson_16.txt */; };
+		83FD1E152506A80300D3E1FD /* lesson_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E072506A80300D3E1FD /* lesson_4.txt */; };
+		83FD1E162506A80300D3E1FD /* lesson_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E082506A80300D3E1FD /* lesson_5.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +65,22 @@
 		83232B562505A73B00664B77 /* iTypistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTypistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83232B5A2505A73B00664B77 /* iTypistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTypistUITests.swift; sourceTree = "<group>"; };
 		83232B5C2505A73B00664B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8391F32E2505D4C1001C2FAF /* lesson_data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lesson_data.txt; sourceTree = "<group>"; };
+		8391F32E2505D4C1001C2FAF /* lesson_1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lesson_1.txt; sourceTree = "<group>"; };
+		8391F3312506A76C001C2FAF /* lesson_2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lesson_2.txt; sourceTree = "<group>"; };
+		83FD1DFB2506A80200D3E1FD /* lesson_9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_9.txt; sourceTree = "<group>"; };
+		83FD1DFC2506A80200D3E1FD /* lesson_7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_7.txt; sourceTree = "<group>"; };
+		83FD1DFD2506A80200D3E1FD /* lesson_12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_12.txt; sourceTree = "<group>"; };
+		83FD1DFE2506A80200D3E1FD /* lesson_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_6.txt; sourceTree = "<group>"; };
+		83FD1DFF2506A80200D3E1FD /* lesson_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_3.txt; sourceTree = "<group>"; };
+		83FD1E002506A80300D3E1FD /* lesson_14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_14.txt; sourceTree = "<group>"; };
+		83FD1E012506A80300D3E1FD /* lesson_11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_11.txt; sourceTree = "<group>"; };
+		83FD1E022506A80300D3E1FD /* lesson_15.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_15.txt; sourceTree = "<group>"; };
+		83FD1E032506A80300D3E1FD /* lesson_13.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_13.txt; sourceTree = "<group>"; };
+		83FD1E042506A80300D3E1FD /* lesson_8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_8.txt; sourceTree = "<group>"; };
+		83FD1E052506A80300D3E1FD /* lesson_10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_10.txt; sourceTree = "<group>"; };
+		83FD1E062506A80300D3E1FD /* lesson_16.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_16.txt; sourceTree = "<group>"; };
+		83FD1E072506A80300D3E1FD /* lesson_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_4.txt; sourceTree = "<group>"; };
+		83FD1E082506A80300D3E1FD /* lesson_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_5.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +136,7 @@
 				83232B3C2505A73A00664B77 /* ViewController.swift */,
 				83232B3E2505A73A00664B77 /* Main.storyboard */,
 				83232B412505A73B00664B77 /* Assets.xcassets */,
-				8391F32E2505D4C1001C2FAF /* lesson_data.txt */,
+				8391F3302506A6D9001C2FAF /* lessons */,
 				83232B432505A73B00664B77 /* LaunchScreen.storyboard */,
 				83232B462505A73B00664B77 /* Info.plist */,
 			);
@@ -129,6 +159,29 @@
 				83232B5C2505A73B00664B77 /* Info.plist */,
 			);
 			path = iTypistUITests;
+			sourceTree = "<group>";
+		};
+		8391F3302506A6D9001C2FAF /* lessons */ = {
+			isa = PBXGroup;
+			children = (
+				8391F32E2505D4C1001C2FAF /* lesson_1.txt */,
+				8391F3312506A76C001C2FAF /* lesson_2.txt */,
+				83FD1DFF2506A80200D3E1FD /* lesson_3.txt */,
+				83FD1E072506A80300D3E1FD /* lesson_4.txt */,
+				83FD1E082506A80300D3E1FD /* lesson_5.txt */,
+				83FD1DFE2506A80200D3E1FD /* lesson_6.txt */,
+				83FD1DFC2506A80200D3E1FD /* lesson_7.txt */,
+				83FD1E042506A80300D3E1FD /* lesson_8.txt */,
+				83FD1DFB2506A80200D3E1FD /* lesson_9.txt */,
+				83FD1E052506A80300D3E1FD /* lesson_10.txt */,
+				83FD1E012506A80300D3E1FD /* lesson_11.txt */,
+				83FD1DFD2506A80200D3E1FD /* lesson_12.txt */,
+				83FD1E032506A80300D3E1FD /* lesson_13.txt */,
+				83FD1E002506A80300D3E1FD /* lesson_14.txt */,
+				83FD1E022506A80300D3E1FD /* lesson_15.txt */,
+				83FD1E062506A80300D3E1FD /* lesson_16.txt */,
+			);
+			path = lessons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +289,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				83232B452505A73B00664B77 /* LaunchScreen.storyboard in Resources */,
+				83FD1E0E2506A80300D3E1FD /* lesson_14.txt in Resources */,
+				83FD1E112506A80300D3E1FD /* lesson_13.txt in Resources */,
+				83FD1E0B2506A80300D3E1FD /* lesson_12.txt in Resources */,
 				83232B422505A73B00664B77 /* Assets.xcassets in Resources */,
-				8391F32F2505D4C1001C2FAF /* lesson_data.txt in Resources */,
+				83FD1E0F2506A80300D3E1FD /* lesson_11.txt in Resources */,
+				83FD1E0A2506A80300D3E1FD /* lesson_7.txt in Resources */,
+				83FD1E152506A80300D3E1FD /* lesson_4.txt in Resources */,
+				8391F32F2505D4C1001C2FAF /* lesson_1.txt in Resources */,
+				83FD1E162506A80300D3E1FD /* lesson_5.txt in Resources */,
+				83FD1E102506A80300D3E1FD /* lesson_15.txt in Resources */,
+				8391F3322506A76C001C2FAF /* lesson_2.txt in Resources */,
+				83FD1E142506A80300D3E1FD /* lesson_16.txt in Resources */,
+				83FD1E092506A80300D3E1FD /* lesson_9.txt in Resources */,
+				83FD1E0C2506A80300D3E1FD /* lesson_6.txt in Resources */,
+				83FD1E0D2506A80300D3E1FD /* lesson_3.txt in Resources */,
+				83FD1E122506A80300D3E1FD /* lesson_8.txt in Resources */,
 				83232B402505A73A00664B77 /* Main.storyboard in Resources */,
+				83FD1E132506A80300D3E1FD /* lesson_10.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

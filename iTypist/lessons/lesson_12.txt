@@ -1,0 +1,101 @@
+#------------------------------------------------------------------------------
+# Lesson T12
+#------------------------------------------------------------------------------
+*:T12
+*:_T_S_T12
+B:                            Lesson T12
+
+I:Let's review the numbers that you have learned so far.
+*:_T_R_L169
+D:j7j f4f k8k d3d l9l s2s ;0; a1a
+
+*:_T_R_L170
+D:4f4 7j7 3d3 8k8 2s2 9l9 1a1 0;0
+
+I:Use your F-finger for the 5-key.
+*:_T_R_L171
+D:fff f5f fff 555 fff f5f fff
+
+*:_T_R_L172
+D:f5f f54 f5f t5g f5f t5r f5f
+ :f5f five f5f two f5f four f5f
+ :f5f 453 f5f 585 f5f 475 f5f
+
+*:_T_R_L173
+S:The 5 of us each carried 50 pound packs all 45 miles of the trip.
+
+I:And now, the longest reach of all!  Use your J-finger for the 6-key.
+*:_T_R_L174
+D:jjj j6j jjj 666 jjj j6j jjj
+
+*:_T_R_L175
+D:j6j June j6j much j6j hum j6j
+ :j6j y6n j6j u6m j6j h76 j6j
+ :j6j 4567 j6j 7654 j6j 6754 j6j
+
+I:The open parenthesis is the shift of the 9-key.  (Use your L-finger).
+*:_T_R_L176
+
+*:_T_R_L177
+D:l(l (.l l(l 9(9 l(l
+
+*:_T_R_L178
+D:l(l loop l(l oil l(l only l(l
+
+I:The close parenthesis is the shift of the 0-key.  (Use your ;-finger).
+*:_T_R_L179
+D:;;; ;); ;;; ;); ;;; ;);
+
+*:_T_R_L180
+D:;;; (.) ;;; (.) ;;; (,) ;;;
+ :;); pole ;); loop ;); pile ;);
+
+*:_T_R_L181
+D:You (the buyer) should ask him (the seller) for the price (of the goods).
+
+*:_T_R_L182
+D:If (X-5) / (X-6) is 56, then what is (X/5) - (X/6)?
+
+*:_T_R_L183
+D:1 2 3 4 5 6 7 8 9 10
+
+I:Try your speed on this song.
+*:_T_R_L184
+S:1 little, 2 little, 3 little Indians,
+ :4 little, 5 little, 6 little Indians,
+ :7 little, 8 little, 9 little Indians,
+ :10 little Indian boys.
+
+*:_T_R_L185
+S:If we want to catch the 6:15 flight to Phoenix (which is the
+ :non-stop), we will have to leave by 5:00 at the latest (in
+ :case we run into traffic).  Otherwise, we will have to take
+ :the 6:45 flight (which makes 5 stops).
+
+I:Use the main keyboard keys.  Don't cheat and use the auxilliary keypad!
+ :Try entering straight numbers:
+*:_T_R_L186
+D:423 475 925 235 295 175 650
+
+*:_T_R_L187
+D:598 693 602 672 315 604 587 307
+
+*:_T_R_L188
+D:12.00 67.50 99.95 38.75 19.99
+
+I:Now let's try for some speed.
+*:_T_R_L189
+S:353 648 604 592 468 501 296
+
+*:_T_R_L190
+S:3574
+ :1937
+ :2586
+ :1904
+ :1837
+ :9003
+ :7283
+ :6745
+
+G:_T_E_T12
+

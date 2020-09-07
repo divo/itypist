@@ -1,0 +1,89 @@
+#------------------------------------------------------------------------------
+# Lesson T5
+#------------------------------------------------------------------------------
+*:T5
+*:_T_S_T5
+B:                            Lesson T5
+
+I:As always, let's start with a review:
+*:_T_R_L65
+D:ade fgh ijk lop rs; ?.,
+
+I:Again.
+*:_T_R_L66
+D:ade fgh ijk lop rs; ?.,
+
+I:Use your F-finger for the T-key.
+*:_T_R_L67
+D:fff ftf fff ttt fff ftf fff
+
+*:_T_R_L68
+D:ftf the ftf top ftf ate ftf
+
+*:_T_R_L69
+D:ftf three ftf often ftf there
+
+*:_T_R_L70
+D:The talk is that those three are threatening her.
+
+I:Use your J-finger for the N-key.
+*:_T_R_L71
+D:jjj jnj jjj nnn jjj jnj jjj
+
+*:_T_R_L72
+D:jnj not jnj ton jnj one jnj
+ :jnj neither jnj opening jnj kneeling jnj
+ :No one has an interest in it.
+
+I:Use your ;-finger for the :-key.
+*:_T_R_L73
+D:;;; ;:; ;;; ::: ;;; ;:; ;;;
+
+I:Always double space after a colon.
+*:_T_R_L74
+D:Dear Sirs:  Dear John:  Dear Alfred:
+
+*:_T_R_L75
+D:Dear Dr. Stone:  To Heathkit:
+
+*:_T_R_L76
+T:            SPEED EXERCISES
+ :
+ :From now on, I will be mixing speed exercises in with the lessons.  In the
+ :drills that you have been doing, I make you keep practicing a line until
+ :you get it right.  In a speed exercise, I will only display the text once.
+ :
+ :What will be different is that I will be timing you.  From the time you type
+ :the first letter of the line until you hit the final carriage return, my
+ :stopwatch will be running.  When you finish, I will calculate your typing speed
+ :and convert it to words per minute (WPM).  I will also count each of the
+ :mistakes you make and display the total number of errors.
+ :
+ :If you make a mistake, I will beep at you and light up the letter that you
+ :should have typed in inverse video (a black letter on a white background).
+ :Just keep going and try to make as few errors as possible.
+
+I:Try this sentence:
+*:_T_R_L77
+S:Sarah has liked knitting all her life.
+
+I:Try a little longer sentence.
+*:_T_R_L78
+S:She looked past her garden to the fields and longed to see the other side.
+
+I:When you type a multi-line paragraph, you will have to hit the RETURN-key at
+ :the end of each line.
+*:_T_R_L79
+S:All the sane people in this area sold their gold
+ :right at the start.  The insane ones held their
+ :gold and later it paid off.
+
+*:_T_R_L80
+S:One fine afternoon the king had an idea.  He
+ :sent a letter to all the lords and ladies of
+ :his land.  He asked for a great feast.  His
+ :people prepared roasts.  His jester did a jig.
+ :All the people left hoping to do it again.
+
+G:_T_E_T5
+
