@@ -8,6 +8,22 @@
 
 import UIKit
 
+class Theme: NSObject {
+    let textColor : UIColor
+    let backgroundColor : UIColor
+    let errorColor : UIColor
+    
+    init(textColor: UIColor, backgroundColor: UIColor, errorColor: UIColor) {
+        self.textColor = textColor
+        self.backgroundColor = backgroundColor
+        self.errorColor = errorColor
+    }
+}
+
+let solarized = Theme(textColor: UIColor(red: 0.67, green: 0.80, blue: 0.81, alpha: 1.00),
+                      backgroundColor: UIColor(red: 0.00, green: 0.16, blue: 0.20, alpha: 1.00),
+                      errorColor: UIColor(red: 0.83, green: 0.33, blue: 0.04, alpha: 1.00))
+
 class ViewController: UIViewController, UITextViewDelegate {
 
     // TODO: iPhone layout
@@ -16,9 +32,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var accuracy_display: UITextView!
     @IBOutlet weak var info_view: UITextView!
     
-    let textColor = UIColor(red: 0.67, green: 0.80, blue: 0.81, alpha: 1.00)
-    let backgroundColor = UIColor(red: 0.00, green: 0.16, blue: 0.20, alpha: 1.00)
-    let errorColor = UIColor(red: 0.83, green: 0.33, blue: 0.04, alpha: 1.00)
+    let theme = solarized
     let cr = "⏎"
     let font_size : CGFloat = 32
     let cr_font_size : CGFloat = 32
@@ -74,6 +88,7 @@ class ViewController: UIViewController, UITextViewDelegate {
             let line = lines[current_line]
             let cmd = line.prefix(2)
 
+            // TODO: Add support for S: (this means a sentance I presume? Does it have different rules?)
             if cmd == "D:" {
                 lessonLine = line.components(separatedBy: cmd).last!
                 break
@@ -102,7 +117,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     func setText(text: String, view: UITextView) {
         let font = UIFont.systemFont(ofSize: font_size)
-        let attributes:  [NSAttributedString.Key: Any] =  [NSAttributedString.Key.font: font, NSAttributedString.Key.kern: 5, NSAttributedString.Key.foregroundColor: textColor]
+        let attributes:  [NSAttributedString.Key: Any] =  [NSAttributedString.Key.font: font, NSAttributedString.Key.kern: 5, NSAttributedString.Key.foregroundColor: theme.textColor]
         let attributedString = NSAttributedString(string: text, attributes: attributes)
         
         view.attributedText = attributedString
@@ -115,7 +130,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         // Clear previous
         if cursor > 0 {
             displayText.removeAttribute(.backgroundColor, range: NSRange(location: cursor - 1, length: 1))
-            displayText.addAttributes([.foregroundColor: textColor], range: NSRange(location: cursor - 1, length: 1))
+            displayText.addAttributes([.foregroundColor: theme.textColor], range: NSRange(location: cursor - 1, length: 1))
             displayView.attributedText = displayText
         }
         
@@ -126,7 +141,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         }
         
         // Set current
-        let attributes: [NSAttributedString.Key: Any] = error ?  [.backgroundColor: errorColor, .foregroundColor: backgroundColor] : [.backgroundColor: textColor, .foregroundColor: backgroundColor]
+        let attributes: [NSAttributedString.Key: Any] = error ?  [.backgroundColor: theme.errorColor, .foregroundColor: theme.backgroundColor] : [.backgroundColor: theme.textColor, .foregroundColor: theme.backgroundColor]
         displayText.addAttributes(attributes, range: NSRange(location: cursor, length: 1))
         displayView.attributedText = displayText
     }
