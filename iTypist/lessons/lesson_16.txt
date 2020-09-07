@@ -83,5 +83,3 @@ T:                THE END
  :Many people simply hold the CONTROL-key down with their A-finger and then hit
  :the other key with whatever finger is convenient (usually the F-finger in this
  :case).
-
-G:_T_E_T16

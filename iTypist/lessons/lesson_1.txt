@@ -141,6 +141,3 @@ D:ask a sad lad
 I:Sentences are kind of limited with only one vowel!
 *:_T_R_L19
 D:dad asks a lad; a lass falls
-
-G:_T_E_T1
-

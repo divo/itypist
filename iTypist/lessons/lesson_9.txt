@@ -82,7 +82,3 @@ S:A quick brown fox jumped over the lazy dogs.
 I:Again,
 *:_T_R_L141
 S:A quick brown fox jumped over the lazy dogs.
-
-G:_T_E_T9
-
-

@@ -19,6 +19,3 @@ T:
  :
  :We will practice touch typing on the keyboard layout for the remaining
  :lessons.
-
-G:_T_E_T13
-

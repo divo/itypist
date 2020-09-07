@@ -88,6 +88,3 @@ S:Dear Mr. Mandrake:
  :Thanks,
  :
  :Mrs. Carmichael
-
-G:_T_E_T7
-

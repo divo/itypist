@@ -73,7 +73,3 @@ S:The new nine digit zip codes have upset quite a
  :the companies whose mailing list programs were
  :poorly designed.  Those unstructured programs
  :will be very difficult to change.
-
-G:_T_E_T11
-
-

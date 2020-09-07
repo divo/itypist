@@ -45,9 +45,12 @@ class ViewController: UIViewController, UITextViewDelegate {
     var succ_count = 0;
     var error_count = 0;
     
+    var current_lesson = 1; // This should be passed in from list
+    var lesson_finished = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        lessonString = loadLessonFile()!
+        loadLessonFile(no: current_lesson)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,7 +64,16 @@ class ViewController: UIViewController, UITextViewDelegate {
         let current_c = displayView.text[cursor]
         
         if input_c == "\n" && current_c == Character(cr) {
-            current_line += 1
+            // If last line advance the lesson or just advance the line
+            if lesson_finished {
+                current_lesson += 1
+                loadLessonFile(no: current_lesson)
+                lesson_finished = false
+                current_line = 0
+            } else {
+                current_line += 1
+            }
+            
             cursor = 0
             setupLesson()
             return
@@ -83,12 +95,22 @@ class ViewController: UIViewController, UITextViewDelegate {
 
         // Read in the file, filling in the information and data buffer
         let lines = lessonString.components(separatedBy: "\n")
+        
+        if current_line == (lines.count - 1) {  //-1 to account for \n at EOF
+            print("Done")
+            setText(text: "Advance to next lesson?", view: info_view) // TODO: Handle last lesson
+            setText(text: cr, view: displayView)
+            lesson_finished = true
+            return
+        }
+        
         var lessonLine = ""
         while true {
             let line = lines[current_line]
             let cmd = line.prefix(2)
 
             // TODO: Add support for S: (this means a sentance I presume? Does it have different rules?)
+            // TODO: Add support for multiline statements. Need to read until empty line. How to render? Hopefully just stick it in the buffer
             if cmd == "D:" {
                 lessonLine = line.components(separatedBy: cmd).last!
                 break
@@ -101,18 +123,13 @@ class ViewController: UIViewController, UITextViewDelegate {
         }
         
         setText(text: lessonLine, view: displayView)
-        
-        if current_line == lines.count {
-            print("Done")
-            return
-        }
-        
         setCursor(error: false)
     }
     
-    func loadLessonFile() -> String? {
-        let path = Bundle.main.path(forResource: "lesson_1", ofType: "txt") // file path for file "data.txt"
-        return try! String(contentsOfFile: path!, encoding: String.Encoding.utf8)
+    func loadLessonFile(no: Int) {
+        let lesson = String(format: "lesson_%d", no)
+        let path = Bundle.main.path(forResource: lesson, ofType: "txt") // file path for file "data.txt"
+        lessonString = try! String(contentsOfFile: path!, encoding: String.Encoding.utf8)
     }
     
     func setText(text: String, view: UITextView) {
@@ -146,7 +163,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         displayView.attributedText = displayText
     }
     
-    //TODO: Style this and move else where
+    //TODO: Make text smaller
     func showAccuracy() {
         let succ_rate : Float = (Float(succ_count) / Float(succ_count + error_count)) * 100
         var accuracy_text = String(format: "Accuracy %.2f%%", succ_rate)

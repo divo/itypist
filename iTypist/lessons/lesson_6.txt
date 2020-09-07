@@ -57,6 +57,3 @@ I:You should be aiming for 15 WPM.  (If you did better, work on accuracy.)
 S:In baseball, bunting is a kind of hit.  But, bunting also
  :refers to a kind of bird and the stuff that is used in
  :flags.  English sure is a strange language.
-
-G:_T_E_T6
-

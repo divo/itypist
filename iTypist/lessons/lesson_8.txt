@@ -98,6 +98,3 @@ S:Hey, diddle diddle--
  :The cow jumped over the moon.
  :The little dog laughed to see such sport,
  :And the dish ran away with the spoon.
-
-G:_T_E_T8
-

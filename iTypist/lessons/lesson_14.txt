@@ -40,6 +40,3 @@ D:Tomorrow's quiz!  What if we get caught?  We'll be expelled!
 
 *:_T_R_L200
 D:He'll never suspect a thing!  We'll get some answers wrong to fool him.
-
-G:_T_E_T14
-
