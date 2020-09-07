@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var input: UITextView!
     @IBOutlet weak var displayView: UITextView!
+    @IBOutlet weak var accuracy_label: UILabel!
+    
     let textColor = UIColor(red: 0.67, green: 0.80, blue: 0.81, alpha: 1.00)
     let backgroundColor = UIColor(red: 0.00, green: 0.16, blue: 0.20, alpha: 1.00)
     let errorColor = UIColor(red: 0.83, green: 0.33, blue: 0.04, alpha: 1.00)
@@ -23,6 +25,9 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     var cursor = 0;
     var current_line = 0;
+    
+    var succ_count = 0;
+    var error_count = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,11 +51,12 @@ class ViewController: UIViewController, UITextViewDelegate {
             return
         }
         
-        
         if input_c == current_c {
             cursor += 1
+            succ_count += 1
             setCursor(error: false)
         } else {
+            error_count += 1
             setCursor(error: true)
         }
     }
@@ -104,7 +110,6 @@ class ViewController: UIViewController, UITextViewDelegate {
         if cursor > 0 {
             displayText.removeAttribute(.backgroundColor, range: NSRange(location: cursor - 1, length: 1))
             displayText.addAttributes([.foregroundColor: textColor], range: NSRange(location: cursor - 1, length: 1))
-
             displayView.attributedText = displayText
         }
         
@@ -117,6 +122,15 @@ class ViewController: UIViewController, UITextViewDelegate {
         let attributes: [NSAttributedString.Key: Any] = error ?  [.backgroundColor: errorColor, .foregroundColor: backgroundColor] : [.backgroundColor: textColor, .foregroundColor: backgroundColor]
         displayText.addAttributes(attributes, range: NSRange(location: cursor, length: 1))
         displayView.attributedText = displayText
+        
+        updateAccuracy()
+    }
+    
+    //TODO: Style this and move else where
+    func updateAccuracy() {
+        if succ_count == 0 { return }
+        let rate : Float = (Float(succ_count) / Float(succ_count + error_count)) * 100
+        accuracy_label.text = String(rate)
     }
 }
 

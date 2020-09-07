@@ -34,26 +34,38 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="AL1-jG-fur"/>
                                 </connections>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w89-cf-NjD">
+                                <rect key="frame" x="906" y="778" width="186" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="DxT-Kk-iDc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.15686274509803921" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="a2z-YX-1qX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2fE-CW-AR6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w89-cf-NjD" secondAttribute="trailing" constant="20" id="5E7-LO-stT"/>
                             <constraint firstItem="Ber-vz-Rdl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="NGz-HR-nMj"/>
                             <constraint firstItem="a2z-YX-1qX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="NJA-fe-gzc"/>
                             <constraint firstItem="a2z-YX-1qX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VDd-jG-Ocu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w89-cf-NjD" secondAttribute="bottom" constant="20" id="pXY-i9-6HS"/>
                             <constraint firstItem="a2z-YX-1qX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="q7i-RM-UjC"/>
                             <constraint firstItem="Ber-vz-Rdl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="vmb-aa-vK6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="accuracy_label" destination="w89-cf-NjD" id="KeZ-Ki-af9"/>
                         <outlet property="displayView" destination="a2z-YX-1qX" id="any-kE-hKE"/>
                         <outlet property="input" destination="Ber-vz-Rdl" id="TyL-cq-M69"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-370" y="4"/>
+            <point key="canvasLocation" x="-370.14388489208636" y="3.5971223021582737"/>
         </scene>
     </scenes>
 </document>
