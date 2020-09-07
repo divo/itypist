@@ -12,6 +12,9 @@ class ViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var input: UITextView!
     @IBOutlet weak var displayView: UITextView!
+    let textColor = UIColor(red: 0.67, green: 0.80, blue: 0.81, alpha: 1.00)
+    let backgroundColor = UIColor(red: 0.00, green: 0.16, blue: 0.20, alpha: 1.00)
+    let errorColor = UIColor(red: 0.83, green: 0.33, blue: 0.04, alpha: 1.00)
     
     var cursor = 0;
     
@@ -27,9 +30,9 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         if input_c == current_c {
             cursor += 1
-            setCursor()
+            setCursor(error: false)
         } else {
-            print("no")
+            setCursor(error: true)
         }
         
     }
@@ -42,27 +45,28 @@ class ViewController: UIViewController, UITextViewDelegate {
         fgf jhj fgf jhj fgf jhj fgf jhj
         """
         setText(text: lessonString)
-        setCursor()
+        setCursor(error: false)
     }
     
     func setText(text: String) {
         let font = UIFont.systemFont(ofSize: 32)
-        let attributes:  [NSAttributedString.Key: Any] =  [NSAttributedString.Key.font: font, NSAttributedString.Key.kern: 5]
+        let attributes:  [NSAttributedString.Key: Any] =  [NSAttributedString.Key.font: font, NSAttributedString.Key.kern: 5, NSAttributedString.Key.foregroundColor: textColor]
         let attributedString = NSAttributedString(string: text, attributes: attributes)
         
         displayView.attributedText = attributedString
     }
     
-    func setCursor() {
+    func setCursor(error: Bool) {
         let displayText = NSMutableAttributedString(attributedString: displayView.attributedText)
 
         
         if cursor > 0 {
             displayText.removeAttribute(.backgroundColor, range: NSRange(location: cursor - 1, length: 1))
+            displayText.addAttributes([.foregroundColor: textColor], range: NSRange(location: cursor - 1, length: 1))
+
             displayView.attributedText = displayText
         }
-        
-        let attributes: [NSAttributedString.Key: Any] = [.backgroundColor: UIColor.green]
+        [.backgroundColor: errorColor, .foregroundColor: backgroundColor] : [.backgroundColor: textColor, .foregroundColor: backgroundColor]
         displayText.addAttributes(attributes, range: NSRange(location: cursor, length: 1))
         displayView.attributedText = displayText
     }
