@@ -16,8 +16,15 @@ class ViewController: UIViewController, UITextViewDelegate {
     let backgroundColor = UIColor(red: 0.00, green: 0.16, blue: 0.20, alpha: 1.00)
     let errorColor = UIColor(red: 0.83, green: 0.33, blue: 0.04, alpha: 1.00)
     
+    var lessonString: String = ""
+    
     var cursor = 0;
-    var line = 0;
+    var current_line = 0;
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        lessonString = loadLessonFile()!
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -29,7 +36,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         let input_c = textView.text.popLast()
         
         if input_c == "\n" && cursor == displayView.text.count {
-            line += 1
+            current_line += 1
             cursor = 0
             setupLesson()
             return
@@ -46,23 +53,37 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
     
     private
-    
+
     func setupLesson() {
-        let lessonString = """
-        fff jjj fff jjj fff jjj fff jjj
-        fgf jhj fgf jhj fgf jhj fgf jhj
-        """
+
+        // Read in the file, filling in the information and data buffer
         let lines = lessonString.components(separatedBy: "\n")
-        let lessonLine = lines[line, default: ""]
+        var lessonLine = ""
+        while true {
+            let line = lines[current_line]
+            let cmd = line.prefix(2)
+            if cmd == "D:" {
+                current_line += 1
+                lessonLine = line.components(separatedBy: cmd).last!
+                break
+            } else {
+                current_line += 1
+            }
+        }
         
         setText(text: lessonLine)
         
-        if line == lines.count {
+        if current_line == lines.count {
             print("Done")
             return
         }
         
         setCursor(error: false)
+    }
+    
+    func loadLessonFile() -> String? {
+        let path = Bundle.main.path(forResource: "lesson_data", ofType: "txt") // file path for file "data.txt"
+        return try! String(contentsOfFile: path!, encoding: String.Encoding.utf8)
     }
     
     func setText(text: String) {

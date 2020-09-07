@@ -15,6 +15,7 @@
 		83232B452505A73B00664B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83232B432505A73B00664B77 /* LaunchScreen.storyboard */; };
 		83232B502505A73B00664B77 /* iTypistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83232B4F2505A73B00664B77 /* iTypistTests.swift */; };
 		83232B5B2505A73B00664B77 /* iTypistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83232B5A2505A73B00664B77 /* iTypistUITests.swift */; };
+		8391F32F2505D4C1001C2FAF /* lesson_data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8391F32E2505D4C1001C2FAF /* lesson_data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		83232B562505A73B00664B77 /* iTypistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTypistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83232B5A2505A73B00664B77 /* iTypistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTypistUITests.swift; sourceTree = "<group>"; };
 		83232B5C2505A73B00664B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8391F32E2505D4C1001C2FAF /* lesson_data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lesson_data.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				83232B3C2505A73A00664B77 /* ViewController.swift */,
 				83232B3E2505A73A00664B77 /* Main.storyboard */,
 				83232B412505A73B00664B77 /* Assets.xcassets */,
+				8391F32E2505D4C1001C2FAF /* lesson_data.txt */,
 				83232B432505A73B00664B77 /* LaunchScreen.storyboard */,
 				83232B462505A73B00664B77 /* Info.plist */,
 			);
@@ -234,6 +237,7 @@
 			files = (
 				83232B452505A73B00664B77 /* LaunchScreen.storyboard in Resources */,
 				83232B422505A73B00664B77 /* Assets.xcassets in Resources */,
+				8391F32F2505D4C1001C2FAF /* lesson_data.txt in Resources */,
 				83232B402505A73A00664B77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
