@@ -15,6 +15,9 @@ class ViewController: UIViewController, UITextViewDelegate {
     let textColor = UIColor(red: 0.67, green: 0.80, blue: 0.81, alpha: 1.00)
     let backgroundColor = UIColor(red: 0.00, green: 0.16, blue: 0.20, alpha: 1.00)
     let errorColor = UIColor(red: 0.83, green: 0.33, blue: 0.04, alpha: 1.00)
+    let cr = "⏎"
+    let font_size : CGFloat = 32
+    let cr_font_size : CGFloat = 32
     
     var lessonString: String = ""
     
@@ -34,15 +37,15 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     func textViewDidChange(_ textView: UITextView) {
         let input_c = textView.text.popLast()
+        let current_c = displayView.text[cursor]
         
-        if input_c == "\n" && cursor == displayView.text.count {
+        if input_c == "\n" && current_c == Character(cr) {
             current_line += 1
             cursor = 0
             setupLesson()
             return
         }
         
-        let current_c = displayView.text[cursor]
         
         if input_c == current_c {
             cursor += 1
@@ -87,7 +90,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
     
     func setText(text: String) {
-        let font = UIFont.systemFont(ofSize: 32)
+        let font = UIFont.systemFont(ofSize: font_size)
         let attributes:  [NSAttributedString.Key: Any] =  [NSAttributedString.Key.font: font, NSAttributedString.Key.kern: 5, NSAttributedString.Key.foregroundColor: textColor]
         let attributedString = NSAttributedString(string: text, attributes: attributes)
         
@@ -105,12 +108,15 @@ class ViewController: UIViewController, UITextViewDelegate {
             displayView.attributedText = displayText
         }
         
-        // Set current
-        if cursor < displayText.length {
-            let attributes: [NSAttributedString.Key: Any] = error ?  [.backgroundColor: errorColor, .foregroundColor: backgroundColor] : [.backgroundColor: textColor, .foregroundColor: backgroundColor]
-            displayText.addAttributes(attributes, range: NSRange(location: cursor, length: 1))
-            displayView.attributedText = displayText
+        // Special case to show new line
+        if cursor == displayText.length {
+            displayText.append(NSAttributedString(string: cr, attributes: [.font: UIFont.systemFont(ofSize: cr_font_size)]))
         }
+        
+        // Set current
+        let attributes: [NSAttributedString.Key: Any] = error ?  [.backgroundColor: errorColor, .foregroundColor: backgroundColor] : [.backgroundColor: textColor, .foregroundColor: backgroundColor]
+        displayText.addAttributes(attributes, range: NSRange(location: cursor, length: 1))
+        displayView.attributedText = displayText
     }
 }
 
