@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     let errorColor = UIColor(red: 0.83, green: 0.33, blue: 0.04, alpha: 1.00)
     
     var cursor = 0;
+    var line = 0;
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -26,6 +27,14 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     func textViewDidChange(_ textView: UITextView) {
         let input_c = textView.text.popLast()
+        
+        if input_c == "\n" && cursor == displayView.text.count {
+            line += 1
+            cursor = 0
+            setupLesson()
+            return
+        }
+        
         let current_c = displayView.text[cursor]
         
         if input_c == current_c {
@@ -34,7 +43,6 @@ class ViewController: UIViewController, UITextViewDelegate {
         } else {
             setCursor(error: true)
         }
-        
     }
     
     private
@@ -44,7 +52,16 @@ class ViewController: UIViewController, UITextViewDelegate {
         fff jjj fff jjj fff jjj fff jjj
         fgf jhj fgf jhj fgf jhj fgf jhj
         """
-        setText(text: lessonString)
+        let lines = lessonString.components(separatedBy: "\n")
+        let lessonLine = lines[line, default: ""]
+        
+        setText(text: lessonLine)
+        
+        if line == lines.count {
+            print("Done")
+            return
+        }
+        
         setCursor(error: false)
     }
     
@@ -59,16 +76,20 @@ class ViewController: UIViewController, UITextViewDelegate {
     func setCursor(error: Bool) {
         let displayText = NSMutableAttributedString(attributedString: displayView.attributedText)
 
-        
+        // Clear previous
         if cursor > 0 {
             displayText.removeAttribute(.backgroundColor, range: NSRange(location: cursor - 1, length: 1))
             displayText.addAttributes([.foregroundColor: textColor], range: NSRange(location: cursor - 1, length: 1))
 
             displayView.attributedText = displayText
         }
-        [.backgroundColor: errorColor, .foregroundColor: backgroundColor] : [.backgroundColor: textColor, .foregroundColor: backgroundColor]
-        displayText.addAttributes(attributes, range: NSRange(location: cursor, length: 1))
-        displayView.attributedText = displayText
+        
+        // Set current
+        if cursor < displayText.length {
+            let attributes: [NSAttributedString.Key: Any] = error ?  [.backgroundColor: errorColor, .foregroundColor: backgroundColor] : [.backgroundColor: textColor, .foregroundColor: backgroundColor]
+            displayText.addAttributes(attributes, range: NSRange(location: cursor, length: 1))
+            displayView.attributedText = displayText
+        }
     }
 }
 
@@ -78,3 +99,12 @@ extension StringProtocol {
     }
 }
 
+extension Array {
+    public subscript(index: Int, default defaultValue: @autoclosure () -> Element) -> Element {
+        guard index >= 0, index < endIndex else {
+            return defaultValue()
+        }
+
+        return self[index]
+    }
+}
