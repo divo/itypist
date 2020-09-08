@@ -1,0 +1,16 @@
+Lesson T1     a s d f g h j k l ;
+Lesson T2     e g h ,
+Lesson T3     i r . shift
+Lesson T4     o p shift ?
+Lesson T5     t n :
+Lesson T6     b u /
+Lesson T7     c m -
+Lesson T8     w y v backspace
+Lesson T9     q x z
+Lesson T10    1 2 3 4
+Lesson T11    7 8 9 0
+Lesson T12    5 6 ( )
+Lesson T13
+Lesson T14    ' " !
+Lesson T15    = * + > < ^
+Lesson T16    @ # $ % &
