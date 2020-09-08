@@ -33,6 +33,7 @@
 		83FD1E162506A80300D3E1FD /* lesson_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E082506A80300D3E1FD /* lesson_5.txt */; };
 		83FD1E182507271500D3E1FD /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD1E172507271500D3E1FD /* TableController.swift */; };
 		83FD1E1A2507291900D3E1FD /* lesson_index.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E192507291900D3E1FD /* lesson_index.txt */; };
+		83FD1E1C25072DF300D3E1FD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD1E1B25072DF300D3E1FD /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		83FD1E082506A80300D3E1FD /* lesson_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_5.txt; sourceTree = "<group>"; };
 		83FD1E172507271500D3E1FD /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		83FD1E192507291900D3E1FD /* lesson_index.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_index.txt; sourceTree = "<group>"; };
+		83FD1E1B25072DF300D3E1FD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				83232B382505A73A00664B77 /* AppDelegate.swift */,
 				83232B3A2505A73A00664B77 /* SceneDelegate.swift */,
 				83232B3C2505A73A00664B77 /* ViewController.swift */,
+				83FD1E1B25072DF300D3E1FD /* Theme.swift */,
 				83232B3E2505A73A00664B77 /* Main.storyboard */,
 				83FD1E172507271500D3E1FD /* TableController.swift */,
 				83232B412505A73B00664B77 /* Assets.xcassets */,
@@ -340,6 +343,7 @@
 			files = (
 				83FD1E182507271500D3E1FD /* TableController.swift in Sources */,
 				83232B3D2505A73A00664B77 /* ViewController.swift in Sources */,
+				83FD1E1C25072DF300D3E1FD /* Theme.swift in Sources */,
 				83232B392505A73A00664B77 /* AppDelegate.swift in Sources */,
 				83232B3B2505A73A00664B77 /* SceneDelegate.swift in Sources */,
 			);
