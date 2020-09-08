@@ -31,6 +31,8 @@
 		83FD1E142506A80300D3E1FD /* lesson_16.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E062506A80300D3E1FD /* lesson_16.txt */; };
 		83FD1E152506A80300D3E1FD /* lesson_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E072506A80300D3E1FD /* lesson_4.txt */; };
 		83FD1E162506A80300D3E1FD /* lesson_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E082506A80300D3E1FD /* lesson_5.txt */; };
+		83FD1E182507271500D3E1FD /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD1E172507271500D3E1FD /* TableController.swift */; };
+		83FD1E1A2507291900D3E1FD /* lesson_index.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E192507291900D3E1FD /* lesson_index.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		83FD1E062506A80300D3E1FD /* lesson_16.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_16.txt; sourceTree = "<group>"; };
 		83FD1E072506A80300D3E1FD /* lesson_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_4.txt; sourceTree = "<group>"; };
 		83FD1E082506A80300D3E1FD /* lesson_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_5.txt; sourceTree = "<group>"; };
+		83FD1E172507271500D3E1FD /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		83FD1E192507291900D3E1FD /* lesson_index.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_index.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 				83232B3A2505A73A00664B77 /* SceneDelegate.swift */,
 				83232B3C2505A73A00664B77 /* ViewController.swift */,
 				83232B3E2505A73A00664B77 /* Main.storyboard */,
+				83FD1E172507271500D3E1FD /* TableController.swift */,
 				83232B412505A73B00664B77 /* Assets.xcassets */,
 				8391F3302506A6D9001C2FAF /* lessons */,
 				83232B432505A73B00664B77 /* LaunchScreen.storyboard */,
@@ -164,6 +169,7 @@
 		8391F3302506A6D9001C2FAF /* lessons */ = {
 			isa = PBXGroup;
 			children = (
+				83FD1E192507291900D3E1FD /* lesson_index.txt */,
 				8391F32E2505D4C1001C2FAF /* lesson_1.txt */,
 				8391F3312506A76C001C2FAF /* lesson_2.txt */,
 				83FD1DFF2506A80200D3E1FD /* lesson_3.txt */,
@@ -301,6 +307,7 @@
 				83FD1E102506A80300D3E1FD /* lesson_15.txt in Resources */,
 				8391F3322506A76C001C2FAF /* lesson_2.txt in Resources */,
 				83FD1E142506A80300D3E1FD /* lesson_16.txt in Resources */,
+				83FD1E1A2507291900D3E1FD /* lesson_index.txt in Resources */,
 				83FD1E092506A80300D3E1FD /* lesson_9.txt in Resources */,
 				83FD1E0C2506A80300D3E1FD /* lesson_6.txt in Resources */,
 				83FD1E0D2506A80300D3E1FD /* lesson_3.txt in Resources */,
@@ -331,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83FD1E182507271500D3E1FD /* TableController.swift in Sources */,
 				83232B3D2505A73A00664B77 /* ViewController.swift in Sources */,
 				83232B392505A73A00664B77 /* AppDelegate.swift in Sources */,
 				83232B3B2505A73A00664B77 /* SceneDelegate.swift in Sources */,
