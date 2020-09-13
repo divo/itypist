@@ -17,8 +17,9 @@ class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var info_view: UITextView!
     
     let theme = solarized
+    var tf : TextFactory!
+
     let cr = "⏎"
-    let font_size : CGFloat = 32
     let cr_font_size : CGFloat = 32
     
     var lessonString: String = ""
@@ -31,10 +32,11 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     var current_lesson = 1; // This should be passed in from list
     var lesson_finished = false
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         loadLessonFile(no: current_lesson)
+        tf = TextFactory(theme: theme)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -82,8 +84,8 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         if current_line == (lines.count - 1) {  //-1 to account for \n at EOF
             print("Done")
-            setText(text: "Advance to next lesson?", view: info_view) // TODO: Handle last lesson
-            setText(text: cr, view: displayView)
+            info_view.attributedText = tf.buildString(text: "Advance to next lesson?") // TODO: Handle last lesson
+            displayView.attributedText = tf.buildString(text: cr)
             lesson_finished = true
             return
         }
@@ -101,12 +103,12 @@ class ViewController: UIViewController, UITextViewDelegate {
             } else if cmd == "I:" {
                 // TODO: I need to clear this if a D: hasen't been found
                 let info_line = line.components(separatedBy: cmd).last!
-                setText(text: info_line, view: info_view)
+                info_view.attributedText = tf.buildString(text: info_line)
             }
             current_line += 1
         }
         
-        setText(text: lessonLine, view: displayView)
+        displayView.attributedText = tf.buildString(text: lessonLine)
         setCursor(error: false)
     }
     
@@ -114,14 +116,6 @@ class ViewController: UIViewController, UITextViewDelegate {
         let lesson = String(format: "lesson_%d", no)
         let path = Bundle.main.path(forResource: lesson, ofType: "txt") // file path for file "data.txt"
         lessonString = try! String(contentsOfFile: path!, encoding: String.Encoding.utf8)
-    }
-    
-    func setText(text: String, view: UITextView) {
-        let font = UIFont.systemFont(ofSize: font_size)
-        let attributes:  [NSAttributedString.Key: Any] =  [NSAttributedString.Key.font: font, NSAttributedString.Key.kern: 5, NSAttributedString.Key.foregroundColor: theme.textColor]
-        let attributedString = NSAttributedString(string: text, attributes: attributes)
-        
-        view.attributedText = attributedString
     }
     
     func setCursor(error: Bool) {
@@ -155,13 +149,13 @@ class ViewController: UIViewController, UITextViewDelegate {
             accuracy_text.append(contentsOf: "\nNeed at least 97%")
             current_line -= 1 //This will probably break
         }
-        setText(text: String(accuracy_text), view: accuracy_display)
+        accuracy_display.attributedText = tf.buildString(text: String(accuracy_text))
         succ_count = 0
         error_count = 0
     }
     
     func clearAccuracy() {
-        setText(text: "", view: accuracy_display)
+        accuracy_display.attributedText = tf.buildString(text: "")
     }
 }
 

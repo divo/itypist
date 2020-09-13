@@ -12,8 +12,12 @@ class TableController: UITableViewController {
     var lessons: [String] = []
     var selected_row = 0
     
+    var theme = solarized
+    var tf : TextFactory!
+    
     override func viewDidLoad() {
         lessons = loadLessonIndex()
+        tf = TextFactory(theme: theme)
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
@@ -32,6 +36,7 @@ class TableController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "lesson_cell", for: indexPath)
         cell.textLabel?.text = lessons[indexPath.row]
+        cell.textLabel?.attributedText
         return cell
     }
     
