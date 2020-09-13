@@ -35,8 +35,7 @@ class TableController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "lesson_cell", for: indexPath)
-        cell.textLabel?.text = lessons[indexPath.row]
-        cell.textLabel?.attributedText
+        cell.textLabel?.attributedText = tf.buildString(text: lessons[indexPath.row])
         return cell
     }
     
