@@ -11,14 +11,18 @@ import UIKit
 class TextFactory: NSObject {
 
     let theme: Theme
-    let font_size : CGFloat = 32
-
+    
     init(theme: Theme) {
       self.theme = theme
     }
+    
+    enum TextSize: CGFloat {
+        case small = 22
+        case normal = 32
+    }
 
-    func buildString(text: String) -> NSAttributedString {
-        let font = UIFont.systemFont(ofSize: font_size)
+    func buildString(text: String, text_size: TextSize = .normal) -> NSAttributedString {
+        let font = UIFont.systemFont(ofSize: text_size.rawValue)
         let attributes:  [NSAttributedString.Key: Any] =
           [NSAttributedString.Key.font: font,
           NSAttributedString.Key.kern: 5,
