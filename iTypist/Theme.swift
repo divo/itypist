@@ -18,6 +18,13 @@ class Theme: NSObject {
         self.backgroundColor = backgroundColor
         self.errorColor = errorColor
     }
+    
+    func setTheme(view: UIView) {
+        view.backgroundColor = self.backgroundColor
+        view.subviews.forEach { (view) in
+            setTheme(view: view)
+        }
+    }
 }
 
 let solarized = Theme(textColor: UIColor(red: 0.67, green: 0.80, blue: 0.81, alpha: 1.00),

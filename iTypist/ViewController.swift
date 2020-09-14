@@ -37,6 +37,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         loadLessonFile(no: current_lesson)
         tf = TextFactory(theme: theme)
+        theme.setTheme(view: self.view)
     }
     
     override func viewDidAppear(_ animated: Bool) {

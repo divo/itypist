@@ -18,6 +18,7 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
     override func viewDidLoad() {
         lessons = loadLessonIndex()
         tf = TextFactory(theme: theme)
+        theme.setTheme(view: self.view)
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
@@ -36,6 +37,7 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "lesson_cell", for: indexPath)
         cell.textLabel?.attributedText = tf.buildString(text: lessons[indexPath.row])
+        cell.backgroundColor = theme.backgroundColor
         return cell
     }
     
