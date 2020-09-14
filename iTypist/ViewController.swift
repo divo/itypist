@@ -32,6 +32,8 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     var current_lesson = 1; // This should be passed in from list
     var lesson_finished = false
+    
+    var timer : CFAbsoluteTime = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +49,10 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
     
     func textViewDidChange(_ textView: UITextView) {
+        if cursor == 0 {
+            startTimer()
+        }
+
         let input_c = textView.text.popLast()
         let current_c = displayView.text[cursor]
         
@@ -85,7 +91,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         if current_line == (lines.count - 1) {  //-1 to account for \n at EOF
             print("Done")
-            info_view.attributedText = tf.buildString(text: "Advance to next lesson?") // TODO: Handle last lesson
+            info_view.attributedText = tf.buildString(text: "Advance to next lesson?") // TODO: Handle last lesson finish
             displayView.attributedText = tf.buildString(text: cr)
             lesson_finished = true
             return
@@ -150,13 +156,33 @@ class ViewController: UIViewController, UITextViewDelegate {
             accuracy_text.append(contentsOf: "\nNeed at least 97%")
             current_line -= 1 //This will probably break
         }
+        
+        let wpm = calcWPM()
+        if wpm > 0 { //Special case for first lesson having only 4 chars
+            accuracy_text.append(contentsOf: String(format: "\nWPM: %0.2f", wpm))
+        }
         accuracy_display.attributedText = tf.buildString(text: String(accuracy_text))
         succ_count = 0
         error_count = 0
+        resetTimer()
     }
     
     func clearAccuracy() {
         accuracy_display.attributedText = tf.buildString(text: "")
+    }
+    
+    func calcWPM() -> Double {
+        let elapsedTime = CFAbsoluteTimeGetCurrent() - timer
+        let line_length = self.displayView.attributedText.string.count
+        return Double(line_length / 5 ) / (elapsedTime / 60)
+    }
+    
+    func startTimer() {
+        timer = CFAbsoluteTimeGetCurrent()
+    }
+    
+    func resetTimer() {
+        timer = 0
     }
 }
 
