@@ -36,8 +36,18 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "lesson_cell", for: indexPath)
-        cell.textLabel?.attributedText = tf.buildString(text: lessons[indexPath.row])
+        let text = lessons[indexPath.row]
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            let title = text.components(separatedBy: "    ").first!
+            let subtitle = text.components(separatedBy: "    ").last!
+            cell.textLabel?.attributedText = tf.buildString(text: title)
+            cell.detailTextLabel?.attributedText = tf.buildString(text: subtitle, text_size: .small)
+        } else {
+            cell.textLabel?.attributedText = tf.buildString(text: text)
+        }
         cell.backgroundColor = theme.backgroundColor
+        cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
+        cell.textLabel?.numberOfLines = 0
         return cell
     }
     
