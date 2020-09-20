@@ -142,6 +142,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Rvc-rB-A4Q"/>
                     <connections>
+                        <outlet property="tableView" destination="VaY-wx-677" id="0Rx-VQ-eaK"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="segue" id="xBO-9i-ZcA"/>
                     </connections>
                 </viewController>

@@ -16,7 +16,6 @@ class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var accuracy_display: UITextView!
     @IBOutlet weak var info_view: UITextView!
     
-    let theme = solarized
     var tf : TextFactory!
 
     let cr = "⏎"
@@ -38,8 +37,12 @@ class ViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadLessonFile(no: current_lesson)
-        tf = TextFactory(theme: theme)
-        theme.setTheme(view: self.view)
+        setTheme()
+    }
+    
+    func setTheme() {
+        tf = TextFactory(theme: global_theme)
+        global_theme.setTheme(view: self.view)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -132,7 +135,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         // Clear previous
         if cursor > 0 {
             displayText.removeAttribute(.backgroundColor, range: NSRange(location: cursor - 1, length: 1))
-            displayText.addAttributes([.foregroundColor: theme.textColor], range: NSRange(location: cursor - 1, length: 1))
+            displayText.addAttributes([.foregroundColor: global_theme.textColor], range: NSRange(location: cursor - 1, length: 1))
             displayView.attributedText = displayText
         }
         
@@ -143,7 +146,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         }
         
         // Set current
-        let attributes: [NSAttributedString.Key: Any] = error ?  [.backgroundColor: theme.errorColor, .foregroundColor: theme.backgroundColor] : [.backgroundColor: theme.textColor, .foregroundColor: theme.backgroundColor]
+        let attributes: [NSAttributedString.Key: Any] = error ?  [.backgroundColor: global_theme.errorColor, .foregroundColor: global_theme.backgroundColor] : [.backgroundColor: global_theme.textColor, .foregroundColor: global_theme.backgroundColor]
         displayText.addAttributes(attributes, range: NSRange(location: cursor, length: 1))
         displayView.attributedText = displayText
     }

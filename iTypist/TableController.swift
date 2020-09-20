@@ -12,18 +12,22 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
     var lessons: [String] = []
     var selected_row = 0
     
-    var theme = solarized
+    @IBOutlet weak var tableView: UITableView!
     var tf : TextFactory!
     
     override func viewDidLoad() {
         lessons = loadLessonIndex()
-        tf = TextFactory(theme: theme)
-        theme.setTheme(view: self.view)
+        setTheme()
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
-        
+    }
+    
+    func setTheme() {
+        tf = TextFactory(theme: global_theme)
+        global_theme.setTheme(view: self.view)
+        tableView.reloadData()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -45,7 +49,7 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
         } else {
             cell.textLabel?.attributedText = tf.buildString(text: text)
         }
-        cell.backgroundColor = theme.backgroundColor
+        cell.backgroundColor = global_theme.backgroundColor
         cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
         cell.textLabel?.numberOfLines = 0
         return cell

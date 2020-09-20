@@ -8,6 +8,8 @@
 
 import UIKit
 
+var global_theme: Theme = solarized
+
 class Theme: NSObject {
     let textColor : UIColor
     let backgroundColor : UIColor
@@ -30,3 +32,11 @@ class Theme: NSObject {
 let solarized = Theme(textColor: UIColor(red: 0.67, green: 0.80, blue: 0.81, alpha: 1.00),
                       backgroundColor: UIColor(red: 0.00, green: 0.16, blue: 0.20, alpha: 1.00),
                       errorColor: UIColor(red: 0.83, green: 0.33, blue: 0.04, alpha: 1.00))
+
+let dark = Theme(textColor: UIColor(red: 0.92, green: 0.95, blue: 0.96, alpha: 1.00),
+                 backgroundColor: UIColor(red: 0.00, green: 0.00, blue: 0.00, alpha: 1.00),
+                 errorColor: UIColor(red: 0.47, green: 0.12, blue: 0.07, alpha: 1.00))
+
+let light = Theme(textColor: UIColor(red: 0.00, green: 0.00, blue: 0.01, alpha: 1.00),
+                  backgroundColor: UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1.00),
+                  errorColor: UIColor(red: 1.00, green: 0.34, blue: 0.29, alpha: 1.00))
