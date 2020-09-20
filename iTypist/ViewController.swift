@@ -102,13 +102,22 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         var lessonLine = ""
         while true {
-            let line = lines[current_line]
+            var line = lines[current_line]
             let cmd = line.prefix(2)
 
-            // TODO: Add support for S: (this means a sentance I presume? Does it have different rules?)
-            // TODO: Add support for multiline statements. Need to read until empty line. How to render? Hopefully just stick it in the buffer
-            if cmd == "D:" {
-                lessonLine = line.components(separatedBy: cmd).last!
+            // This is a little hairy now, but I don't want to spend the time making a slick list comprhension
+            if cmd == "D:" || cmd == "S:" {
+                //Read until the next newline
+                // Read the line, then add the next line if it's not empty
+                while line != "" {
+                    if !lessonLine.isEmpty {
+                        lessonLine += "\n"
+                    }
+                    
+                    lessonLine += String(line.suffix(from: line.index(line.startIndex, offsetBy: 2)))
+                    current_line += 1
+                    line = lines[current_line]
+                }
                 break
             } else if cmd == "I:" {
                 // TODO: I need to clear this if a D: hasen't been found
@@ -130,7 +139,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     func setCursor(error: Bool) {
         let displayText = NSMutableAttributedString(attributedString: displayView.attributedText)
-        clearAccuracy()
+        clearAccuracyDisplay()
         
         // Clear previous
         if cursor > 0 {
@@ -170,7 +179,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         resetTimer()
     }
     
-    func clearAccuracy() {
+    func clearAccuracyDisplay() {
         accuracy_display.attributedText = tf.buildString(text: "")
     }
     
