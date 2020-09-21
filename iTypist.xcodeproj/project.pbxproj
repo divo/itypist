@@ -11,7 +11,6 @@
 		83232B3B2505A73A00664B77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83232B3A2505A73A00664B77 /* SceneDelegate.swift */; };
 		83232B3D2505A73A00664B77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83232B3C2505A73A00664B77 /* ViewController.swift */; };
 		83232B402505A73A00664B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83232B3E2505A73A00664B77 /* Main.storyboard */; };
-		83232B422505A73B00664B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83232B412505A73B00664B77 /* Assets.xcassets */; };
 		83232B452505A73B00664B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83232B432505A73B00664B77 /* LaunchScreen.storyboard */; };
 		83232B502505A73B00664B77 /* iTypistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83232B4F2505A73B00664B77 /* iTypistTests.swift */; };
 		83232B5B2505A73B00664B77 /* iTypistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83232B5A2505A73B00664B77 /* iTypistUITests.swift */; };
@@ -19,6 +18,7 @@
 		8391F32F2505D4C1001C2FAF /* lesson_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8391F32E2505D4C1001C2FAF /* lesson_1.txt */; };
 		8391F3322506A76C001C2FAF /* lesson_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8391F3312506A76C001C2FAF /* lesson_2.txt */; };
 		8396C05A2518529A007B388F /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396C0592518529A007B388F /* InfoController.swift */; };
+		8396C05C25186279007B388F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8396C05B25186279007B388F /* Assets.xcassets */; };
 		83FD1E092506A80300D3E1FD /* lesson_9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFB2506A80200D3E1FD /* lesson_9.txt */; };
 		83FD1E0A2506A80300D3E1FD /* lesson_7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFC2506A80200D3E1FD /* lesson_7.txt */; };
 		83FD1E0B2506A80300D3E1FD /* lesson_12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFD2506A80200D3E1FD /* lesson_12.txt */; };
@@ -61,7 +61,6 @@
 		83232B3A2505A73A00664B77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		83232B3C2505A73A00664B77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83232B3F2505A73A00664B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		83232B412505A73B00664B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83232B442505A73B00664B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83232B462505A73B00664B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83232B4B2505A73B00664B77 /* iTypistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTypistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +73,7 @@
 		8391F32E2505D4C1001C2FAF /* lesson_1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lesson_1.txt; sourceTree = "<group>"; };
 		8391F3312506A76C001C2FAF /* lesson_2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lesson_2.txt; sourceTree = "<group>"; };
 		8396C0592518529A007B388F /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
+		8396C05B25186279007B388F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83FD1DFB2506A80200D3E1FD /* lesson_9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_9.txt; sourceTree = "<group>"; };
 		83FD1DFC2506A80200D3E1FD /* lesson_7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_7.txt; sourceTree = "<group>"; };
 		83FD1DFD2506A80200D3E1FD /* lesson_12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_12.txt; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 				83232B3E2505A73A00664B77 /* Main.storyboard */,
 				83FD1E172507271500D3E1FD /* TableController.swift */,
 				8396C0592518529A007B388F /* InfoController.swift */,
-				83232B412505A73B00664B77 /* Assets.xcassets */,
+				8396C05B25186279007B388F /* Assets.xcassets */,
 				8391F3302506A6D9001C2FAF /* lessons */,
 				83232B432505A73B00664B77 /* LaunchScreen.storyboard */,
 				83232B462505A73B00664B77 /* Info.plist */,
@@ -307,7 +307,7 @@
 				83FD1E0E2506A80300D3E1FD /* lesson_14.txt in Resources */,
 				83FD1E112506A80300D3E1FD /* lesson_13.txt in Resources */,
 				83FD1E0B2506A80300D3E1FD /* lesson_12.txt in Resources */,
-				83232B422505A73B00664B77 /* Assets.xcassets in Resources */,
+				8396C05C25186279007B388F /* Assets.xcassets in Resources */,
 				83FD1E0F2506A80300D3E1FD /* lesson_11.txt in Resources */,
 				83FD1E0A2506A80300D3E1FD /* lesson_7.txt in Resources */,
 				83FD1E152506A80300D3E1FD /* lesson_4.txt in Resources */,
