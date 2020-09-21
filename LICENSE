@@ -1,123 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kk9-bD-1xJ">
-    <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-    </dependencies>
-    <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="sdW-wP-Obn">
-            <objects>
-                <navigationController id="kk9-bD-1xJ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="96N-Za-jsL">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="50"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="OQG-3A-piE" kind="relationship" relationship="rootViewController" id="MlS-nB-5oJ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AH7-iq-t62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1789" y="12"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iTypist" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2z-YX-1qX" userLabel="display view">
-                                <rect key="frame" x="150" y="108" width="812" height="509"/>
-                                <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ber-vz-Rdl" userLabel="hidden input">
-                                <rect key="frame" x="25" y="70" width="0.0" height="0.0"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="ZRZ-2e-KON"/>
-                                    <constraint firstAttribute="width" id="dC6-Wi-JsH"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="AL1-jG-fur"/>
-                                </connections>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frs-03-9MG" userLabel="display view">
-                                <rect key="frame" x="25" y="784" width="1067" height="30"/>
-                                <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7r-Ic-9gq" userLabel="info view">
-                                <rect key="frame" x="150" y="44" width="812" height="56"/>
-                                <attributedString key="attributedText"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                            </textView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="frs-03-9MG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="3sP-ag-vba"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y7r-Ic-9gq" secondAttribute="trailing" constant="15" id="ARv-LX-g3G"/>
-                            <constraint firstItem="a2z-YX-1qX" firstAttribute="top" secondItem="y7r-Ic-9gq" secondAttribute="bottom" constant="8" id="C9d-Vb-7wu"/>
-                            <constraint firstItem="Ber-vz-Rdl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="NGz-HR-nMj"/>
-                            <constraint firstItem="a2z-YX-1qX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VDd-jG-Ocu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="y7r-Ic-9gq" secondAttribute="top" constant="6" id="VgK-A2-mR6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="frs-03-9MG" secondAttribute="trailing" constant="20" id="afo-lm-eP7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="frs-03-9MG" secondAttribute="bottom" constant="20" id="gAL-9v-Mls"/>
-                            <constraint firstItem="y7r-Ic-9gq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="lxP-3W-xHq"/>
-                            <constraint firstItem="a2z-YX-1qX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="q7i-RM-UjC"/>
-                            <constraint firstItem="Ber-vz-Rdl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="vmb-aa-vK6"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="lBQ-BX-gfl"/>
-                    <connections>
-                        <outlet property="accuracy_display" destination="frs-03-9MG" id="vp6-cN-CFp"/>
-                        <outlet property="displayView" destination="a2z-YX-1qX" id="any-kE-hKE"/>
-                        <outlet property="info_view" destination="y7r-Ic-9gq" id="jiE-Td-IS7"/>
-                        <outlet property="input" destination="Ber-vz-Rdl" id="TyL-cq-M69"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-365.28776978417267" y="11.510791366906476"/>
-        </scene>
-        <!--Info Controller-->
-        <scene sceneID="4iv-pS-sf7">
-            <objects>
-                <viewController id="oRJ-pz-NRZ" customClass="InfoController" customModule="iTypist" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3HG-Yv-KNx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="680"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BuL-kE-laE">
-                                <rect key="frame" x="16" y="39" width="343" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Solar"/>
-                                    <segment title="Light"/>
-                                    <segment title="Dark"/>
-                                </segments>
-                                <connections>
-                                    <action selector="changeTheme:" destination="oRJ-pz-NRZ" eventType="valueChanged" id="54A-nH-39y"/>
-                                </connections>
-                            </segmentedControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yHH-Qe-0eW">
-                                <rect key="frame" x="16" y="90" width="343" height="19196"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">iTypist. Based on gtypist. http://github.com/divo/iTypist
+iTypist Based on gtypist. http://github.com/divo/iTypist
 
 GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
- Copyright (C) 2007 Free Software Foundation, Inc. &lt;https://fsf.org/&gt;
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
@@ -761,14 +647,14 @@ the "copyright" line and a pointer to where the full notice is found.
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 Also add information on how to contact you by electronic and paper mail.
 
   If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
-    &lt;program&gt;  Copyright (C) &lt;year&gt;  &lt;name of author&gt;
+    <program>  Copyright (C) <year>  <name of author>
     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `show c' for details.
@@ -780,91 +666,11 @@ might be different; for a GUI interface, you would use an "about box".
   You should also get your employer (if you work as a programmer) or school,
 if any, to sign a "copyright disclaimer" for the program, if necessary.
 For more information on this, and how to apply and follow the GNU GPL, see
-&lt;https://www.gnu.org/licenses/&gt;.
+<https://www.gnu.org/licenses/>.
 
   The GNU General Public License does not permit incorporating your program
 into proprietary programs.  If your program is a subroutine library, you
 may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
-&lt;https://www.gnu.org/licenses/why-not-lgpl.html&gt;.</mutableString>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="snN-YZ-Kv9"/>
-                    </view>
-                    <connections>
-                        <outlet property="segmentedControl" destination="BuL-kE-laE" id="M5D-hB-6rr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="npM-Ds-0r8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-365" y="739"/>
-        </scene>
-        <!--Table Controller-->
-        <scene sceneID="SGQ-XG-fl1">
-            <objects>
-                <viewController id="OQG-3A-piE" customClass="TableController" customModule="iTypist" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="H10-97-HxI">
-                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VaY-wx-677">
-                                <rect key="frame" x="15" y="0.0" width="1082" height="814"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lesson_cell" textLabel="Oar-gl-mqp" detailTextLabel="ZW7-Ac-dxb" style="IBUITableViewCellStyleSubtitle" id="iBQ-NZ-HR0">
-                                        <rect key="frame" x="0.0" y="28" width="1082" height="56"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iBQ-NZ-HR0" id="WHx-PG-yE8">
-                                            <rect key="frame" x="0.0" y="0.0" width="1082" height="56"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oar-gl-mqp">
-                                                    <rect key="frame" x="15" y="9" width="33.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZW7-Ac-dxb">
-                                                    <rect key="frame" x="15" y="31.5" width="44" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="OQG-3A-piE" id="zNN-7i-NJR"/>
-                                    <outlet property="delegate" destination="OQG-3A-piE" id="teg-Ku-Umd"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="VaY-wx-677" firstAttribute="top" secondItem="H10-97-HxI" secondAttribute="top" id="72R-iH-T8B"/>
-                            <constraint firstItem="VaY-wx-677" firstAttribute="trailing" secondItem="iIa-pu-v0H" secondAttribute="trailing" constant="-15" id="9pt-jV-bOS"/>
-                            <constraint firstItem="VaY-wx-677" firstAttribute="bottom" secondItem="iIa-pu-v0H" secondAttribute="bottom" constant="-20" id="AgL-fk-8s4"/>
-                            <constraint firstItem="VaY-wx-677" firstAttribute="leading" secondItem="iIa-pu-v0H" secondAttribute="leading" constant="15" id="DgA-JT-wLP"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="iIa-pu-v0H"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Rvc-rB-A4Q"/>
-                    <connections>
-                        <outlet property="tableView" destination="VaY-wx-677" id="0Rx-VQ-eaK"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue" id="xBO-9i-ZcA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="88j-ap-LbU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1048" y="12"/>
-        </scene>
-    </scenes>
-</document>
+<https://www.gnu.org/licenses/why-not-lgpl.html>.
