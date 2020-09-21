@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TableController: UIViewController, UITableViewDelegate, UITableViewDataSource, Themeable {
     var lessons: [String] = []
     var selected_row = 0
     
@@ -18,6 +18,7 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
     override func viewDidLoad() {
         lessons = loadLessonIndex()
         setTheme()
+        registerForTheme(component: self)
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
@@ -57,12 +58,17 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selected_row = indexPath.row
-        self.performSegue(withIdentifier: "segue", sender: self)
+        self.performSegue(withIdentifier: "lesson", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dest = segue.destination as! ViewController
-        dest.current_lesson = selected_row + 1
+        switch segue.identifier {
+        case "lesson":
+            let dest = segue.destination as! ViewController
+            dest.current_lesson = selected_row + 1
+        case "info": break
+        default: break
+        }
     }
     
     private

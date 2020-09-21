@@ -18,6 +18,7 @@
 		8372E673250DC56500084436 /* TextFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8372E672250DC56500084436 /* TextFactory.swift */; };
 		8391F32F2505D4C1001C2FAF /* lesson_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8391F32E2505D4C1001C2FAF /* lesson_1.txt */; };
 		8391F3322506A76C001C2FAF /* lesson_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8391F3312506A76C001C2FAF /* lesson_2.txt */; };
+		8396C05A2518529A007B388F /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396C0592518529A007B388F /* InfoController.swift */; };
 		83FD1E092506A80300D3E1FD /* lesson_9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFB2506A80200D3E1FD /* lesson_9.txt */; };
 		83FD1E0A2506A80300D3E1FD /* lesson_7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFC2506A80200D3E1FD /* lesson_7.txt */; };
 		83FD1E0B2506A80300D3E1FD /* lesson_12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFD2506A80200D3E1FD /* lesson_12.txt */; };
@@ -72,6 +73,7 @@
 		8372E672250DC56500084436 /* TextFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFactory.swift; sourceTree = "<group>"; };
 		8391F32E2505D4C1001C2FAF /* lesson_1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lesson_1.txt; sourceTree = "<group>"; };
 		8391F3312506A76C001C2FAF /* lesson_2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lesson_2.txt; sourceTree = "<group>"; };
+		8396C0592518529A007B388F /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
 		83FD1DFB2506A80200D3E1FD /* lesson_9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_9.txt; sourceTree = "<group>"; };
 		83FD1DFC2506A80200D3E1FD /* lesson_7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_7.txt; sourceTree = "<group>"; };
 		83FD1DFD2506A80200D3E1FD /* lesson_12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_12.txt; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				83FD1E1B25072DF300D3E1FD /* Theme.swift */,
 				83232B3E2505A73A00664B77 /* Main.storyboard */,
 				83FD1E172507271500D3E1FD /* TableController.swift */,
+				8396C0592518529A007B388F /* InfoController.swift */,
 				83232B412505A73B00664B77 /* Assets.xcassets */,
 				8391F3302506A6D9001C2FAF /* lessons */,
 				83232B432505A73B00664B77 /* LaunchScreen.storyboard */,
@@ -346,6 +349,7 @@
 			files = (
 				83FD1E182507271500D3E1FD /* TableController.swift in Sources */,
 				8372E673250DC56500084436 /* TextFactory.swift in Sources */,
+				8396C05A2518529A007B388F /* InfoController.swift in Sources */,
 				83232B3D2505A73A00664B77 /* ViewController.swift in Sources */,
 				83FD1E1C25072DF300D3E1FD /* Theme.swift in Sources */,
 				83232B392505A73A00664B77 /* AppDelegate.swift in Sources */,
