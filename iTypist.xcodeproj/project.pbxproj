@@ -527,6 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9F7FZ3S533;
 				INFOPLIST_FILE = iTypist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -537,7 +538,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.halfspud.iTypist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -546,6 +547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9F7FZ3S533;
 				INFOPLIST_FILE = iTypist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -556,7 +558,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.halfspud.iTypist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
