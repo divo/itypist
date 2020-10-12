@@ -25,6 +25,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     var cursor = 0;
     var current_line = 0;
+    var info_line_no = 0;
     
     var succ_count = 0;
     var error_count = 0;
@@ -122,6 +123,7 @@ class ViewController: UIViewController, UITextViewDelegate {
             } else if cmd == "I:" {
                 // TODO: I need to clear this if a D: hasen't been found
                 let info_line = line.components(separatedBy: cmd).last!
+                info_line_no = current_line
                 info_view.attributedText = tf.buildString(text: info_line)
             }
             current_line += 1
@@ -166,7 +168,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         var accuracy_text = String(format: "Accuracy %.2f%%", succ_rate)
         if succ_rate < 97.0 {
             accuracy_text.append(contentsOf: "\nNeed at least 97%")
-            current_line -= 1 //This will probably break
+            current_line = info_line_no //This will probably break
         }
         
         let wpm = calcWPM()
