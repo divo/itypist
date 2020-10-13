@@ -1,4 +1,3 @@
-## iTypist
 ![splash](https://user-images.githubusercontent.com/9431616/95814542-7d9ae980-0ccf-11eb-8ed0-f69d7db3dced.png)
 
 A simple touch typing tutor based on gtypist
