@@ -4,4 +4,4 @@ A simple touch typing tutor based on gtypist
 
 ### Support or Contact
 
-Having trouble with iTypist? Open an issue [contact support](https://github.com/divo/itypist/issues) and we’ll help you sort it out.
+Having trouble with iTypist? Open an [issue](https://github.com/divo/itypist/issues) and we’ll help you sort it out.
