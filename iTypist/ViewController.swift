@@ -129,6 +129,7 @@ class ViewController: UIViewController, UITextViewDelegate {
             current_line += 1
         }
         
+        //TODO: All of this is a mess. All this setter stuff should be done with named methods
         displayView.attributedText = tf.buildString(text: lessonLine)
         setCursor(error: false)
     }
