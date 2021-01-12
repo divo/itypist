@@ -24,13 +24,12 @@
 		83FD1E0B2506A80300D3E1FD /* lesson_12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFD2506A80200D3E1FD /* lesson_12.txt */; };
 		83FD1E0C2506A80300D3E1FD /* lesson_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFE2506A80200D3E1FD /* lesson_6.txt */; };
 		83FD1E0D2506A80300D3E1FD /* lesson_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1DFF2506A80200D3E1FD /* lesson_3.txt */; };
-		83FD1E0E2506A80300D3E1FD /* lesson_14.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E002506A80300D3E1FD /* lesson_14.txt */; };
+		83FD1E0E2506A80300D3E1FD /* lesson_13.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E002506A80300D3E1FD /* lesson_13.txt */; };
 		83FD1E0F2506A80300D3E1FD /* lesson_11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E012506A80300D3E1FD /* lesson_11.txt */; };
-		83FD1E102506A80300D3E1FD /* lesson_15.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E022506A80300D3E1FD /* lesson_15.txt */; };
-		83FD1E112506A80300D3E1FD /* lesson_13.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E032506A80300D3E1FD /* lesson_13.txt */; };
+		83FD1E102506A80300D3E1FD /* lesson_14.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E022506A80300D3E1FD /* lesson_14.txt */; };
 		83FD1E122506A80300D3E1FD /* lesson_8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E042506A80300D3E1FD /* lesson_8.txt */; };
 		83FD1E132506A80300D3E1FD /* lesson_10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E052506A80300D3E1FD /* lesson_10.txt */; };
-		83FD1E142506A80300D3E1FD /* lesson_16.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E062506A80300D3E1FD /* lesson_16.txt */; };
+		83FD1E142506A80300D3E1FD /* lesson_15.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E062506A80300D3E1FD /* lesson_15.txt */; };
 		83FD1E152506A80300D3E1FD /* lesson_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E072506A80300D3E1FD /* lesson_4.txt */; };
 		83FD1E162506A80300D3E1FD /* lesson_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 83FD1E082506A80300D3E1FD /* lesson_5.txt */; };
 		83FD1E182507271500D3E1FD /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD1E172507271500D3E1FD /* TableController.swift */; };
@@ -79,13 +78,12 @@
 		83FD1DFD2506A80200D3E1FD /* lesson_12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_12.txt; sourceTree = "<group>"; };
 		83FD1DFE2506A80200D3E1FD /* lesson_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_6.txt; sourceTree = "<group>"; };
 		83FD1DFF2506A80200D3E1FD /* lesson_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_3.txt; sourceTree = "<group>"; };
-		83FD1E002506A80300D3E1FD /* lesson_14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_14.txt; sourceTree = "<group>"; };
+		83FD1E002506A80300D3E1FD /* lesson_13.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_13.txt; sourceTree = "<group>"; };
 		83FD1E012506A80300D3E1FD /* lesson_11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_11.txt; sourceTree = "<group>"; };
-		83FD1E022506A80300D3E1FD /* lesson_15.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_15.txt; sourceTree = "<group>"; };
-		83FD1E032506A80300D3E1FD /* lesson_13.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_13.txt; sourceTree = "<group>"; };
+		83FD1E022506A80300D3E1FD /* lesson_14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_14.txt; sourceTree = "<group>"; };
 		83FD1E042506A80300D3E1FD /* lesson_8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_8.txt; sourceTree = "<group>"; };
 		83FD1E052506A80300D3E1FD /* lesson_10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_10.txt; sourceTree = "<group>"; };
-		83FD1E062506A80300D3E1FD /* lesson_16.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_16.txt; sourceTree = "<group>"; };
+		83FD1E062506A80300D3E1FD /* lesson_15.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_15.txt; sourceTree = "<group>"; };
 		83FD1E072506A80300D3E1FD /* lesson_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_4.txt; sourceTree = "<group>"; };
 		83FD1E082506A80300D3E1FD /* lesson_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lesson_5.txt; sourceTree = "<group>"; };
 		83FD1E172507271500D3E1FD /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
@@ -191,10 +189,9 @@
 				83FD1E052506A80300D3E1FD /* lesson_10.txt */,
 				83FD1E012506A80300D3E1FD /* lesson_11.txt */,
 				83FD1DFD2506A80200D3E1FD /* lesson_12.txt */,
-				83FD1E032506A80300D3E1FD /* lesson_13.txt */,
-				83FD1E002506A80300D3E1FD /* lesson_14.txt */,
-				83FD1E022506A80300D3E1FD /* lesson_15.txt */,
-				83FD1E062506A80300D3E1FD /* lesson_16.txt */,
+				83FD1E002506A80300D3E1FD /* lesson_13.txt */,
+				83FD1E022506A80300D3E1FD /* lesson_14.txt */,
+				83FD1E062506A80300D3E1FD /* lesson_15.txt */,
 			);
 			path = lessons;
 			sourceTree = "<group>";
@@ -304,8 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83232B452505A73B00664B77 /* LaunchScreen.storyboard in Resources */,
-				83FD1E0E2506A80300D3E1FD /* lesson_14.txt in Resources */,
-				83FD1E112506A80300D3E1FD /* lesson_13.txt in Resources */,
+				83FD1E0E2506A80300D3E1FD /* lesson_13.txt in Resources */,
 				83FD1E0B2506A80300D3E1FD /* lesson_12.txt in Resources */,
 				8396C05C25186279007B388F /* Assets.xcassets in Resources */,
 				83FD1E0F2506A80300D3E1FD /* lesson_11.txt in Resources */,
@@ -313,9 +309,9 @@
 				83FD1E152506A80300D3E1FD /* lesson_4.txt in Resources */,
 				8391F32F2505D4C1001C2FAF /* lesson_1.txt in Resources */,
 				83FD1E162506A80300D3E1FD /* lesson_5.txt in Resources */,
-				83FD1E102506A80300D3E1FD /* lesson_15.txt in Resources */,
+				83FD1E102506A80300D3E1FD /* lesson_14.txt in Resources */,
 				8391F3322506A76C001C2FAF /* lesson_2.txt in Resources */,
-				83FD1E142506A80300D3E1FD /* lesson_16.txt in Resources */,
+				83FD1E142506A80300D3E1FD /* lesson_15.txt in Resources */,
 				83FD1E1A2507291900D3E1FD /* lesson_index.txt in Resources */,
 				83FD1E092506A80300D3E1FD /* lesson_9.txt in Resources */,
 				83FD1E0C2506A80300D3E1FD /* lesson_6.txt in Resources */,
@@ -529,7 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 9F7FZ3S533;
 				INFOPLIST_FILE = iTypist/Info.plist;
@@ -552,7 +548,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 9F7FZ3S533;
 				INFOPLIST_FILE = iTypist/Info.plist;

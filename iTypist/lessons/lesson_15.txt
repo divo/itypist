@@ -1,99 +1,85 @@
 #------------------------------------------------------------------------------
-# Lesson T15
+# Lesson T16
 #------------------------------------------------------------------------------
-*:T15
-*:_T_S_T15
+*:T16
+*:_T_S_T16
 B:                            Lesson T15
 
-*:_T_R_L201
+*:_T_R_L217
 T:
+ :In this lesson we will be practicing the shifted numeric keys on the
+ :terminal keyboard.  I will only be giving you practice in the keystroke
+ :motions.  Very few sentence drills or speed exercises are included, since these
+ :keys are used so infrequently.
  :
- :In this lesson we will be practicing the special symbols which you will need
- :for BASIC or other programming languages.  I won't give you too much practice
- :with these symbols right now.  (You should be able to get plenty of exercise by
- :simply typing in programs.)
+ :If you are typing something which includes one of these special characters and
+ :you cannot remember where a key is, look.  But, always make sure to hit the key
+ :with the correct finger.  (If you do use the key often, you will eventually
+ :learn where it is without looking.)  Since these keys are used infrequently and
+ :are in different places on most other keyboards or are totally missing, speed
+ :is not important.
 
-I:Use your ;-finger for the equals key.
-*:_T_R_L202
-D:;;; ;=; ;;; ;=; ;;; ;=; ;;;
+I:Use your S-finger for the at-sign.
+*:_T_R_L218
+D:sss s@s sss s@s sss s@s sss
 
-*:_T_R_L203
-D:;=; -=- ;=; '=' ;=; :=: ;=;
- :;=; X=2 ;=; Y=3 ;=; Z=0 ;=;
+*:_T_R_L219
+D:s@s at@ s@s w@x s@s S@w s@s
+ :s@s wax s@s mix s@s @we s@s
 
-I:Use your K-finger for the asterisk key.
-*:_T_R_L204
-D:kkk k*k kkk k*k kkk k*k kkk
+I:Use your D-finger for the pound-sign (also called the number-sign).
+*:_T_R_L220
+D:ddd d#d ddd d#d ddd d#d ddd
 
-*:_T_R_L205
-D:k*k 3*2 k*k 5*6 k*k 9*7 k*k
- :k*k i*i k*k *,* k*k 8*8 k*k
+*:_T_R_L221
+D:d#d d#e d#d 3#c d#d #c# d#d
+ :d#d cat d#d dog d#d eat d#d
 
-I:Use your ;-finger for the plus sign.
-*:_T_R_L206
-D:;;; ;+; ;;; ;+; ;;; ;+; ;;;
+I:Use your F-finger for the dollar-sign.
+*:_T_R_L222
+D:fff f$f fff f$f fff f$f fff
 
-*:_T_R_L207
-D:;+; 2+4 ;+; 7+5 ;+; 8+0 ;+;
- :;+; +=+ ;+; -+- ;+; /+/ ;+;
+*:_T_R_L223
+D:f$f r$v f$f v$4 f$f 4$r f$f
+ :f$f rave f$f fare f$f $10.00 f$f
+ :Joe keeps cryptic inventory bills like:  4# @ $5.00/# or 6# @ $4.50/#.
 
-I:Use your L-finger for the greater-than key.
-*:_T_R_L208
-D:lll l>l lll l>l lll l>l lll
+I:Use your F-finger for the percent sign as well.
+*:_T_R_L224
+D:fff f%f fff f%f fff f%f fff
 
-*:_T_R_L209
-D:l>l X>3 l>l Y>7 l>l Z>0 l>l
- :l>l >>> l>l 9>9 l>l .>. l>l
+*:_T_R_L225
+D:f%f 12% f%f 10% f%f 20% f%f
+ :f%f two f%f ran f%f bug f%f
+ :If a $25.00 item is sold at a 10% discount, it will cost $22.50.
+ :But, a 10% markup on a item selling for $22.50 is only $24.75!  How come?
 
-I:Use your K-finger for the less-than key.
-*:_T_R_L210
-D:kkk k<k kkk k<k kkk k<k kkk
+I:Use your J-finger for the ampersand.
+*:_T_R_L226
+D:jjj j&j jjj j&j jjj j&j jjj
 
-*:_T_R_L211
-D:k<k X<0 k<k Y<2 k<k Z<8 k<k
- :k<k <.> k<k >.< k<k <<< k<k
+*:_T_R_L227
+D:j&j 2&4 j&j 9&5 j&j 7&7 j&j
 
-I:Use your J-finger for the up-arrow key.
-*:_T_R_L212
-D:jjj j^j jjj ^^^ jjj j^j jjj
+*:_T_R_L228
+D:j&j you&me j&j he&she j&j M&M j&j
 
-*:_T_R_L213
-D:j^j X^2 j^j Y^3 j^j Z^4 j^j
- :j^j <^> j^j .^. j^j "^" j^j
-
-I:Try entering this BASIC program:
-*:_T_R_L214
-S:10 LET x=10
- :20 LET y=20
- :30 PRINT x+y/3
- :40 PRINT y/x*5
- :50 STOP
-
-I:And another:
-*:_T_R_L215
-S:10 REM Program to find square roots with using ^.5 feature
- :20 INPUT "What number do you want the square root of? ";s
- :30 x = 2
- :40 y = s/x
- :50 x = (x+y)/2
- :60 IF ABS(x^2 - s) > s/1000 THEN 40
- :70 PRINT "The square root of ";s;" is ";x
- :80 STOP
-
-I:Press down the CAPS LOCK key to simplify typing in this BASIC program:
-*:_T_R_L216
-S:100 REM PROGRAM TO SOLVE QUADRATIC EQUATION
- :125 PRINT "ENTER THE VALUES OF A, B, AND C WHERE:"
- :150 PRINT
- :175 PRINT "AX^2 + BX + C = 0"
- :200 INPUT A,B,C
- :210 IF A = 0 THEN 400
- :225 D = B^2 - 4*A*C
- :250 IF D < 0 THEN 500
- :275 PRINT "ONE ROOT IS: ";-B+SQR(D)/2/A
- :300 PRINT "THE OTHER IS: ";-B-SQR(D)/2/A
- :325 STOP
- :400 PRINT "NOT A QUADRATIC.  TRY AGAIN."
- :425 GOTO 100
- :500 PRINT "COMPLEX ROOTS.  TRY AGAIN."
- :525 GOTO 125
+*:_T_R_L229
+T:                THE END
+ :
+ :You have now completed the T-series of these lessons.  If you have not already
+ :done so, you should now start the N-series or S-series.
+ :
+ :There are a few keys which we have not studied.  If you decide to touch-type
+ :these keys, use the closest finger.  Thus, the ESC, TAB, CAPS LOCK, and SCROLL
+ :keys use the A-finger.  And, the keys to the far right (BACKSPACE, DELETE, LINE
+ :FEED, RETURN, }, {, etc.) use the ;-finger.  The upper keys (f1, f2, etc.) are
+ :not usually touch typed as the reach is too far.  If you can, fine.
+ :
+ :The CONTROL and REPEAT keys are difficult to touch type, but are treated like
+ :the SHIFT keys whenever possible.  For example, to REPEAT an exclamation point,
+ :hold the REPEAT key down with your ;-finger and then hit the ! with your A-
+ :finger.  Certain command sequences, such as Control/S, are hard to do this way.
+ :Many people simply hold the CONTROL-key down with their A-finger and then hit
+ :the other key with whatever finger is convenient (usually the F-finger in this
+ :case).

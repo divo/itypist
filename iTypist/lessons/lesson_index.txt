@@ -10,7 +10,6 @@ Lesson T9     q x z
 Lesson T10    1 2 3 4
 Lesson T11    7 8 9 0
 Lesson T12    5 6 ( )
-Lesson T13
 Lesson T14    ' " !
 Lesson T15    = * + > < ^
 Lesson T16    @ # $ % &
