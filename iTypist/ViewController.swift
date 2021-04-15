@@ -5,6 +5,7 @@
 //  Created by Steven Diviney on 06/09/2020.
 //  Copyright © 2020 Steven Diviney. All rights reserved.
 //
+//TODO: Rewrite this thing to use some sort of modern framework, get rid of all this shit state code.
 
 import UIKit
 
@@ -93,7 +94,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         // Read in the file, filling in the information and data buffer
         let lines = lessonString.components(separatedBy: "\n")
         
-        if current_line == (lines.count - 1) {  //-1 to account for \n at EOF
+        if current_line >= lines.count {  //-1 to account for \n at EOF
             print("Done")
             info_view.attributedText = tf.buildString(text: "Advance to next lesson?") // TODO: Handle last lesson finish
             displayView.attributedText = tf.buildString(text: cr)
